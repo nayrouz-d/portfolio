@@ -12,6 +12,8 @@ const PROJECTS_DATA = [
     category: "iot",
     categoryLabel: "IoT & Télémétrie",
     contextBadge: "VMD Solutions (2026)",
+    year: "2026",
+    dateOrder: 202603,
     role: "Software Engineer / Full Stack Developer",
     icon: "🛰️",
     image: "assets/vmdtrac_live_map.png",
@@ -123,6 +125,8 @@ const PROJECTS_DATA = [
     category: "fullstack",
     categoryLabel: "Full Stack & FinTech",
     contextBadge: "VMD Solutions (2026)",
+    year: "2026",
+    dateOrder: 202602,
     role: "Software Engineer / Full Stack Developer",
     icon: "📈",
     image: "assets/vmd_commission_dashboard.png",
@@ -158,6 +162,8 @@ const PROJECTS_DATA = [
     category: "fullstack",
     categoryLabel: "Biométrie & Documents Officiels",
     contextBadge: "SMLTP (2025)",
+    year: "2025",
+    dateOrder: 202511,
     role: "Ingénieur Informatique Full Stack",
     icon: "🛂",
     image: "assets/smltp_foreigners_management.png",
@@ -192,6 +198,8 @@ const PROJECTS_DATA = [
     category: "fullstack",
     categoryLabel: "Full Stack & Data",
     contextBadge: "Ooredoo Tunisie (2024)",
+    year: "2024",
+    dateOrder: 202407,
     role: "Stagiaire Développeur Full Stack",
     icon: "📊",
     gradient: "linear-gradient(135deg, #f43f5e, #fb7185)",
@@ -225,6 +233,8 @@ const PROJECTS_DATA = [
     category: "erp",
     categoryLabel: "ERP & Automatisation",
     contextBadge: "VMD Solutions (2026)",
+    year: "2026",
+    dateOrder: 202601,
     role: "Développeur & Admin Odoo",
     icon: "💼",
     gradient: "linear-gradient(135deg, #8b5cf6, #c084fc)",
@@ -253,36 +263,43 @@ const PROJECTS_DATA = [
     }
   },
   {
-    id: "ecommerce-cloud",
-    title: "Plateforme E-Commerce Moderne & Cloud",
+    id: "sniper-phone-tn",
+    title: "Sniper Phone TN – E-Commerce High-Tech & Apple",
     category: "fullstack",
-    categoryLabel: "Full Stack & Web",
-    contextBadge: "Projet Web & Cloud",
-    role: "Lead Full Stack & UI/UX",
-    icon: "🛍️",
+    categoryLabel: "Full Stack & E-Commerce",
+    contextBadge: "Sniper Phone TN (2025)",
+    year: "2025",
+    dateOrder: 202506,
+    role: "Lead Full Stack & UI/UX Developer",
+    icon: "📱",
     image: "assets/ecommerce_hero.png",
-    gradient: "linear-gradient(135deg, #f59e0b, #fbbf24)",
-    shortDesc: "Application e-commerce fluide et moderne avec catalogue dynamique, tiroir de panier interactif, panneau d'administration et conteneurisation Docker.",
-    highlights: [
-      "Frontend réactif et élégant développé avec React 19 et Vite",
-      "Gestion d'état avancée pour panier, authentification et commandes",
-      "Panneau d'administration intégré pour la gestion des stocks et produits",
-      "Architecture prête pour le déploiement cloud avec conteneur Docker"
+    gallery: [
+      { label: "🛍️ Boutique & Catalogue Apple", src: "assets/ecommerce_hero.png" },
+      { label: "🏷️ Logo Officiel Sniper Phone TN", src: "assets/sniper_phone_logo.jpg" }
     ],
-    techStack: ["React 19", "Vite", "Lucide React", "Canvas Confetti", "Docker", "JavaScript ES6+", "CSS3"],
+    gradient: "linear-gradient(135deg, #0071e3, #38bdf8)",
+    shortDesc: "Plateforme e-commerce haut de gamme spécialisée dans les smartphones neufs et reconditionnés, écosystème Apple et accessoires high-tech (Mateur, Tunisie) : navigation multi-niveaux, panier dynamique en DT, espace client, mode admin et commande rapide.",
+    highlights: [
+      "Frontend réactif et moderne développé avec React 19, Vite, Lucide React et Canvas Confetti",
+      "Catalogue dynamique multi-catégories (Apple iPhone/Mac, smartphones, tablettes, consoles) avec garanties 12 mois et 3 mois",
+      "Panier tiroir interactif (Slide-over Cart Drawer) avec calcul instantané en Dinars Tunisiens (DT) et gestion des stocks",
+      "Espace compte utilisateur sécurisé et mode Panneau d'Administration pour l'ajout et l'édition de produits en direct",
+      "Optimisation des performances : score Lighthouse 98+, expérience responsive mobile et conteneurisation Docker"
+    ],
+    techStack: ["React 19", "Vite", "JavaScript ES6+", "Lucide React", "Canvas Confetti", "Docker", "CSS3 Apple Design"],
     metrics: {
-      "Performance": "Lighthouse 98+",
-      "UI/UX": "Micro-animations",
-      "Conteneur": "Image Docker Optimisée",
-      "Expérience": "Panier & Admin Fluides"
+      "Garantie & SAV": "12 Mois Neuf / 3 Mois Recond.",
+      "Devise": "Dinar Tunisien (DT)",
+      "Boutique": "Mateur, Tunisie",
+      "Performance": "Lighthouse 98+"
     },
     deepDive: {
-      challenge: "Offrir une expérience d'achat d'une grande fluidité sans rechargement de page tout en fournissant un outil d'administration simple et complet pour le commerçant.",
-      solution: "Conception d'une application single-page modulaire avec React Context API pour orchestrer le panier, les notifications toast et la gestion des produits en temps réel.",
+      challenge: "Concevoir pour la boutique high-tech Sniper Phone TN à Mateur une plateforme de vente en ligne moderne, intuitive et ultra-rapide capable de rivaliser avec les standards de l'Apple Store, avec un panier fluide sans rechargement de page et un panneau d'administration autonome.",
+      solution: "Développement d'une application single-page modulaire en React 19 et Vite avec React Context API pour orchestrer le panier persistant, les favoris (Wishlist), l'authentification et les notifications Toast. Intégration d'un mode Administrateur permettant de gérer les fiches produits, prix et stocks en temps réel.",
       results: [
-        "Interface responsive ultra-rapide sur mobile et desktop",
-        "Gestion autonome des articles, stocks et simulations d'achats",
-        "Packaging Docker prêt pour le déploiement sur n'importe quel orchestrateur"
+        "Interface responsive et luxueuse inspirée du design system Apple avec chargement instantané",
+        "Processus d'achat simplifié et transparent pour les clients tunisiens avec calcul en Dinars (DT)",
+        "Administration autonome sans connaissance technique pour le gérant de la boutique"
       ]
     }
   },
@@ -291,7 +308,9 @@ const PROJECTS_DATA = [
     title: "Pipeline DevOps Industriel & Monitoring Cloud",
     category: "devops",
     categoryLabel: "DevOps & Cloud",
-    contextBadge: "Infrastructure & CI/CD",
+    contextBadge: "Infrastructure & CI/CD (2024)",
+    year: "2024",
+    dateOrder: 202401,
     role: "DevOps Engineer",
     icon: "⚙️",
     gradient: "linear-gradient(135deg, #3b82f6, #60a5fa)",
@@ -367,9 +386,12 @@ function renderProjects(filterCategory) {
   const container = document.getElementById('projects-container');
   if (!container) return;
 
+  // Tri automatique et strict par date (du plus récent au plus ancien)
+  const sortedProjects = [...PROJECTS_DATA].sort((a, b) => b.dateOrder - a.dateOrder);
+
   const filteredProjects = filterCategory === 'all' 
-    ? PROJECTS_DATA 
-    : PROJECTS_DATA.filter(p => p.category === filterCategory);
+    ? sortedProjects 
+    : sortedProjects.filter(p => p.category === filterCategory);
 
   container.innerHTML = filteredProjects.map(project => `
     <article class="project-card" style="--project-gradient: ${project.gradient}">
@@ -383,8 +405,13 @@ function renderProjects(filterCategory) {
       </div>
 
       <div class="project-card-body">
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-role">${project.role}</p>
+        <div class="project-header-row">
+          <h3 class="project-title">${project.title}</h3>
+        </div>
+        <div class="project-meta-info">
+          <span class="project-role">${project.role}</span>
+          <span class="project-date-pill">📅 ${project.year}</span>
+        </div>
         <p class="project-desc">${project.shortDesc}</p>
 
         <ul class="project-highlights">
@@ -413,7 +440,7 @@ function renderProjects(filterCategory) {
 
       <div class="project-card-footer">
         <button class="btn-detail" onclick="openProjectModal('${project.id}')">
-          Voir les détails & 12 fonctionnalités <span>&rarr;</span>
+          ${project.platformFeatures ? 'Voir les détails & 12 fonctionnalités' : 'Voir les détails & architecture'} <span>&rarr;</span>
         </button>
       </div>
     </article>
@@ -464,7 +491,7 @@ window.openProjectModal = function(projectId) {
   const modalTechs = document.getElementById('modal-techs');
 
   modalTitle.textContent = project.title;
-  modalSubtitle.textContent = `${project.role} • ${project.contextBadge}`;
+  modalSubtitle.textContent = `${project.role} • ${project.contextBadge} • 📅 ${project.year}`;
 
   // Image Preview & Gallery Tabs
   const modalImgPreview = document.getElementById('modal-image-preview');
