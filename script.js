@@ -266,11 +266,11 @@ const PROJECTS_DATA = [
     id: "sniper-phone-tn",
     title: "Sniper Phone TN – E-Commerce High-Tech & Apple",
     category: "fullstack",
-    categoryLabel: "Full Stack & E-Commerce",
-    contextBadge: "Sniper Phone TN (2025)",
+    categoryLabel: "Freelance • E-Commerce",
+    contextBadge: "Freelance (2025)",
     year: "2025",
     dateOrder: 202506,
-    role: "Lead Full Stack & UI/UX Developer",
+    role: "Développeuse Full Stack Freelance (Client : Sniper Phone TN)",
     icon: "📱",
     image: "assets/ecommerce_hero.png",
     gallery: [
@@ -294,7 +294,7 @@ const PROJECTS_DATA = [
       "Performance": "Lighthouse 98+"
     },
     deepDive: {
-      challenge: "Concevoir pour la boutique high-tech Sniper Phone TN à Mateur une plateforme de vente en ligne moderne, intuitive et ultra-rapide capable de rivaliser avec les standards de l'Apple Store, avec un panier fluide sans rechargement de page et un panneau d'administration autonome.",
+      challenge: "Mission freelance réalisée de bout en bout pour la boutique high-tech Sniper Phone TN à Mateur : concevoir une plateforme de vente en ligne moderne, intuitive et ultra-rapide capable de rivaliser avec les standards de l'Apple Store, avec un panier fluide sans rechargement de page et un panneau d'administration autonome.",
       solution: "Développement d'une application single-page modulaire en React 19 et Vite avec React Context API pour orchestrer le panier persistant, les favoris (Wishlist), l'authentification et les notifications Toast. Intégration d'un mode Administrateur permettant de gérer les fiches produits, prix et stocks en temps réel.",
       results: [
         "Interface responsive et luxueuse inspirée du design system Apple avec chargement instantané",
