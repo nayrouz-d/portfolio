@@ -157,6 +157,41 @@ const PROJECTS_DATA = [
     }
   },
   {
+    id: "odoo-erp-suite",
+    title: "Modules Métier & Personnalisation Odoo 17",
+    category: "erp",
+    categoryLabel: "ERP & Automatisation",
+    contextBadge: "VMD Solutions (2026)",
+    year: "2026",
+    dateOrder: 202601,
+    role: "Développeur & Admin Odoo",
+    icon: "💼",
+    gradient: "linear-gradient(135deg, #8b5cf6, #c084fc)",
+    shortDesc: "Développement sur-mesure de modules métier Odoo 17, interconnexion avec les flux de géolocalisation et automatisation de processus d'entreprise.",
+    highlights: [
+      "Conception de modules Odoo 17 pour la gestion d'actifs et d'abonnements télématiques",
+      "Interfaçage API REST entre Odoo et les microservices de tracking VMDTrac",
+      "Génération automatisée de rapports, factures et tableaux de bord financiers",
+      "Administration système, déploiement Docker et sécurisation des bases de données Odoo"
+    ],
+    techStack: ["Python", "Odoo 17", "PostgreSQL", "XML", "API REST", "Docker", "Linux"],
+    metrics: {
+      "ERP Version": "Odoo 17 Enterprise",
+      "Modules": "Sur-mesure",
+      "Interconnexion": "API REST Temps Réel",
+      "Données": "PostgreSQL Dédié"
+    },
+    deepDive: {
+      challenge: "Éliminer la double saisie entre la plateforme de télémétrie VMDTrac et le logiciel de gestion de facturation et d'actifs de l'entreprise.",
+      solution: "Développement d'un module Odoo dédié qui interroge et reçoit les événements de VMDTrac via API REST, synchronise les numéros IMEI des boîtiers, met à jour les statuts de compte et automatise la facturation.",
+      results: [
+        "Suppression totale des redondances de données et des erreurs de saisie",
+        "Génération en un clic des rapports mensuels pour les clients abonnés",
+        "Mise à niveau sereine vers Odoo 17 avec une base de code documentée et maintenable"
+      ]
+    }
+  },
+  {
     id: "smltp-foreigners",
     title: "Gestion des Étrangers & Enrôlement Biométrique",
     category: "fullstack",
@@ -193,72 +228,42 @@ const PROJECTS_DATA = [
     }
   },
   {
-    id: "ooredoo-traceability",
-    title: "Traçabilité des Flux Data & Analytics BI",
+    id: "gestion-stock-aspnet",
+    title: "StockMaster Pro – Gestion de Stock & Inventaire ASP.NET Core",
     category: "fullstack",
-    categoryLabel: "Full Stack & Data",
-    contextBadge: "Ooredoo Tunisie (2024)",
-    year: "2024",
-    dateOrder: 202407,
-    role: "Stagiaire Développeur Full Stack",
-    icon: "📊",
-    gradient: "linear-gradient(135deg, #f43f5e, #fb7185)",
-    shortDesc: "Plateforme web de traçabilité complète des activités Data avec automatisation des flux par Spring Batch et tableaux de bord décisionnels Power BI.",
-    highlights: [
-      "Automatisation d'ingestion quotidienne de gros volumes de fichiers avec Spring Batch",
-      "Réduction spectaculaire de 90 % des interventions manuelles quotidiennes",
-      "Intégration d'un tableau de bord dynamique Power BI pour le suivi et l'analyse",
-      "Pipeline CI/CD Jenkins pour des déploiements fiables et automatisés"
+    categoryLabel: "ASP.NET Core & Full Stack",
+    contextBadge: "StockMaster Pro (.NET 9)",
+    year: "2025",
+    dateOrder: 202508,
+    role: "Développeuse Full Stack C# / .NET",
+    icon: "📦",
+    image: "assets/gestion_stock_aspnet.png",
+    gallery: [
+      { label: "📊 Tableau de Bord & Inventaire", src: "assets/gestion_stock_aspnet.png" },
+      { label: "🔍 Filtres & Actions CRUD", src: "assets/gestion_stock_ui.png" }
     ],
-    techStack: ["Spring Boot", "Angular", "Spring Batch", "Power BI", "Jenkins CI/CD", "SQL", "Git"],
+    gradient: "linear-gradient(135deg, #2563eb, #38bdf8)",
+    shortDesc: "Application web d'administration et de gestion des stocks développée sous ASP.NET Core 9 (C#) et Entity Framework Core : suivi d'inventaire en temps réel, indicateurs KPIs (valeur globale, unités en stock, alertes de réapprovisionnement), recherche dynamique, catégorisation et opérations CRUD sécurisées avec SQLite/SQL Server.",
+    highlights: [
+      "Tableau de bord KPIs en direct : 4 produits référencés, 14 899,00 € de valeur d'inventaire et 100 unités en stock",
+      "Moteur de recherche instantané et filtrage multi-critères par catégories (Informatique, Accessoires)",
+      "Cycle CRUD complet (Créer, Consulter, Modifier, Supprimer) avec formulaires validés par DataAnnotations",
+      "Architecture MVC découplée sous .NET 9 avec persistance relationnelle via Entity Framework Core & SQLite"
+    ],
+    techStack: ["C#", ".NET 9", "ASP.NET Core MVC", "Entity Framework Core", "SQLite", "Bootstrap 5", "HTML5/CSS3"],
     metrics: {
-      "Automatisation": "-90% d'effort manuel",
-      "Performance": "Batch Quotidien Auto",
-      "Reporting": "Power BI Interactif",
-      "Déploiement": "CI/CD Jenkins"
+      "Framework": "ASP.NET Core (.NET 9)",
+      "ORM & Data": "EF Core & SQLite",
+      "Architecture": "MVC Pattern & Repos",
+      "UI & Style": "Bootstrap 5 Responsive"
     },
     deepDive: {
-      challenge: "Les équipes data devaient auditer et vérifier manuellement des centaines de flux de données chaque jour, entraînant des retards d'analyse et un risque accru d'erreur humaine.",
-      solution: "Mise en place d'une chaîne automatisée avec Spring Batch pour parser, valider et stocker les données en continu, couplée à un portail web Angular réactif et des visualisations Power BI pour les managers opérationnels.",
+      challenge: "Concevoir une application de gestion d'inventaire fluide, fiable et ergonomique pour les gestionnaires de stocks, permettant de suivre la valeur des immobilisations, d'alerter sur les ruptures et de faciliter les opérations d'ajustement sans complexité d'installation.",
+      solution: "Architecture robuste ASP.NET Core MVC sous .NET 9 avec injection de dépendance native, persistance relationnelle via Entity Framework Core avec migrations automatiques, interface Bootstrap 5 moderne aux contrastes soignés, et validation stricte des modèles côté serveur et côté client.",
       results: [
-        "Gain de temps massif : les interventions manuelles ont chuté de 90%",
-        "Traçabilité infaillible et alertes automatiques en cas d'incohérence",
-        "Automatisation du cycle de build et test grâce à Jenkins"
-      ]
-    }
-  },
-  {
-    id: "odoo-erp-suite",
-    title: "Modules Métier & Personnalisation Odoo 17",
-    category: "erp",
-    categoryLabel: "ERP & Automatisation",
-    contextBadge: "VMD Solutions (2026)",
-    year: "2026",
-    dateOrder: 202601,
-    role: "Développeur & Admin Odoo",
-    icon: "💼",
-    gradient: "linear-gradient(135deg, #8b5cf6, #c084fc)",
-    shortDesc: "Développement sur-mesure de modules métier Odoo 17, interconnexion avec les flux de géolocalisation et automatisation de processus d'entreprise.",
-    highlights: [
-      "Conception de modules Odoo 17 pour la gestion d'actifs et d'abonnements télématiques",
-      "Interfaçage API REST entre Odoo et les microservices de tracking VMDTrac",
-      "Génération automatisée de rapports, factures et tableaux de bord financiers",
-      "Administration système, déploiement Docker et sécurisation des bases de données Odoo"
-    ],
-    techStack: ["Python", "Odoo 17", "PostgreSQL", "XML", "API REST", "Docker", "Linux"],
-    metrics: {
-      "ERP Version": "Odoo 17 Enterprise",
-      "Modules": "Sur-mesure",
-      "Interconnexion": "API REST Temps Réel",
-      "Données": "PostgreSQL Dédié"
-    },
-    deepDive: {
-      challenge: "Éliminer la double saisie entre la plateforme de télémétrie VMDTrac et le logiciel de gestion de facturation et d'actifs de l'entreprise.",
-      solution: "Développement d'un module Odoo dédié qui interroge et reçoit les événements de VMDTrac via API REST, synchronise les numéros IMEI des boîtiers, met à jour les statuts de compte et automatise la facturation.",
-      results: [
-        "Suppression totale des redondances de données et des erreurs de saisie",
-        "Génération en un clic des rapports mensuels pour les clients abonnés",
-        "Mise à niveau sereine vers Odoo 17 avec une base de code documentée et maintenable"
+        "Génération automatique des indicateurs clés (valeur totale du stock calculée dynamiquement, nombre d'articles critiques)",
+        "Traitement ultra-rapide des requêtes avec Entity Framework Core et base SQLite légère",
+        "Code source modulaire prêt pour une mise à l'échelle vers SQL Server ou PostgreSQL en production"
       ]
     }
   },
@@ -300,6 +305,80 @@ const PROJECTS_DATA = [
         "Interface responsive et luxueuse inspirée du design system Apple avec chargement instantané",
         "Processus d'achat simplifié et transparent pour les clients tunisiens avec calcul en Dinars (DT)",
         "Administration autonome sans connaissance technique pour le gérant de la boutique"
+      ]
+    }
+  },
+  {
+    id: "campconnect-tn",
+    title: "CampConnect – Organisation de Campings & Réservation de Tentes",
+    category: "fullstack",
+    categoryLabel: "Full Stack & Plein Air",
+    contextBadge: "Plateforme Collaborative (2024)",
+    year: "2024",
+    dateOrder: 202410,
+    role: "Ingénieure Full Stack / Web Developer",
+    icon: "⛺",
+    image: "assets/camping_platform_banner.png",
+    gallery: [
+      { label: "🏕️ Plateforme & Réservation", src: "assets/camping_platform_banner.png" }
+    ],
+    gradient: "linear-gradient(135deg, #059669, #10b981)",
+    shortDesc: "Plateforme web collaborative dédiée aux passionnés de randonnée et de plein air : réservation en ligne de tentes et équipements outdoor, planification d'événements de camping (bivouacs, randos), forum de discussion communautaire en temps réel et partage de spots naturels.",
+    highlights: [
+      "Module de réservation de tentes et matériel de bivouac avec calendrier de disponibilités en temps réel",
+      "Organisation et création d'événements de camping : localisation, date, difficulté, nombre de participants et météo",
+      "Espace de discussion & messagerie interactive (WebSocket) pour la coordination, le covoiturage et les conseils matériel",
+      "Système d'évaluation, avis certifiés et fiches détaillées des spots de camping et bivouac"
+    ],
+    techStack: ["Spring Boot", "Angular", "Java", "TypeScript", "WebSocket", "API REST", "PostgreSQL", "Bootstrap"],
+    metrics: {
+      "Réservations": "Tentes & Matériel 24/7",
+      "Communauté": "Messagerie & Forum direct",
+      "Événements": "Campings & Randonnées",
+      "Architecture": "Spring Boot & Angular"
+    },
+    deepDive: {
+      challenge: "Les amateurs de camping et de bivouac en pleine nature peinent souvent à louer du matériel de qualité, à trouver des partenaires de camp fiables et à échanger des informations sécurisées sur l'état des sites naturels.",
+      solution: "Conception d'une plateforme web complète combinant un système e-commerce de réservation locative de matériel (tentes 2/4 places, sacs de couchage, réchauds), un gestionnaire d'événements de groupe et un salon de discussion interactif temps réel via WebSockets pour planifier les départs et covoiturages.",
+      results: [
+        "Expérience utilisateur fluide de la réservation de tente jusqu'au point de rendez-vous du camp",
+        "Canal de discussion actif permettant une logistique sans friction entre campeurs",
+        "Architecture sécurisée avec authentification JWT et gestion des rôles (campeur, organisateur, loueur)"
+      ]
+    }
+  },
+  {
+    id: "ooredoo-traceability",
+    title: "Traçabilité des Flux Data & Analytics BI",
+    category: "fullstack",
+    categoryLabel: "Full Stack & Data",
+    contextBadge: "Ooredoo Tunisie (2024)",
+    year: "2024",
+    dateOrder: 202407,
+    role: "Stagiaire Développeur Full Stack",
+    icon: "📊",
+    gradient: "linear-gradient(135deg, #f43f5e, #fb7185)",
+    shortDesc: "Plateforme web de traçabilité complète des activités Data avec automatisation des flux par Spring Batch et tableaux de bord décisionnels Power BI.",
+    highlights: [
+      "Automatisation d'ingestion quotidienne de gros volumes de fichiers avec Spring Batch",
+      "Réduction spectaculaire de 90 % des interventions manuelles quotidiennes",
+      "Intégration d'un tableau de bord dynamique Power BI pour le suivi et l'analyse",
+      "Pipeline CI/CD Jenkins pour des déploiements fiables et automatisés"
+    ],
+    techStack: ["Spring Boot", "Angular", "Spring Batch", "Power BI", "Jenkins CI/CD", "SQL", "Git"],
+    metrics: {
+      "Automatisation": "-90% d'effort manuel",
+      "Performance": "Batch Quotidien Auto",
+      "Reporting": "Power BI Interactif",
+      "Déploiement": "CI/CD Jenkins"
+    },
+    deepDive: {
+      challenge: "Les équipes data devaient auditer et vérifier manuellement des centaines de flux de données chaque jour, entraînant des retards d'analyse et un risque accru d'erreur humaine.",
+      solution: "Mise en place d'une chaîne automatisée avec Spring Batch pour parser, valider et stocker les données en continu, couplée à un portail web Angular réactif et des visualisations Power BI pour les managers opérationnels.",
+      results: [
+        "Gain de temps massif : les interventions manuelles ont chuté de 90%",
+        "Traçabilité infaillible et alertes automatiques en cas d'incohérence",
+        "Automatisation du cycle de build et test grâce à Jenkins"
       ]
     }
   },
