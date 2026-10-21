@@ -245,8 +245,8 @@ const PROJECTS_DATA = [
     gradient: "linear-gradient(135deg, #2563eb, #38bdf8)",
     shortDesc: "Application web d'administration et de gestion des stocks développée sous ASP.NET Core 9 (C#) et Entity Framework Core : suivi d'inventaire en temps réel, indicateurs KPIs (valeur globale, unités en stock, alertes de réapprovisionnement), recherche dynamique, catégorisation et opérations CRUD sécurisées avec SQLite/SQL Server.",
     highlights: [
-      "Tableau de bord KPIs en direct : 4 produits référencés, 14 899,00 € de valeur d'inventaire et 100 unités en stock",
-      "Moteur de recherche instantané et filtrage multi-critères par catégories (Informatique, Accessoires)",
+      "Tableau de bord KPIs en direct : calcul automatique des indicateurs clés (valorisation globale de l'inventaire, unités en stock et alertes)",
+      "Moteur de recherche instantané et filtrage multi-critères par catégories",
       "Cycle CRUD complet (Créer, Consulter, Modifier, Supprimer) avec formulaires validés par DataAnnotations",
       "Architecture MVC découplée sous .NET 9 avec persistance relationnelle via Entity Framework Core & SQLite"
     ],
@@ -261,7 +261,7 @@ const PROJECTS_DATA = [
       challenge: "Concevoir une application de gestion d'inventaire fluide, fiable et ergonomique pour les gestionnaires de stocks, permettant de suivre la valeur des immobilisations, d'alerter sur les ruptures et de faciliter les opérations d'ajustement sans complexité d'installation.",
       solution: "Architecture robuste ASP.NET Core MVC sous .NET 9 avec injection de dépendance native, persistance relationnelle via Entity Framework Core avec migrations automatiques, interface Bootstrap 5 moderne aux contrastes soignés, et validation stricte des modèles côté serveur et côté client.",
       results: [
-        "Génération automatique des indicateurs clés (valeur totale du stock calculée dynamiquement, nombre d'articles critiques)",
+        "Génération automatique des indicateurs clés (valorisation globale du stock calculée dynamiquement, suivi en direct)",
         "Traitement ultra-rapide des requêtes avec Entity Framework Core et base SQLite légère",
         "Code source modulaire prêt pour une mise à l'échelle vers SQL Server ou PostgreSQL en production"
       ]
