@@ -36,7 +36,7 @@ const PROJECTS_DATA = [
       "Ingestion des protocoles Garmin InReach, balises Iridium SBD, terminaux SPOT et passerelle SFTP",
       "Sécurité et contrôle d'accès multi-tenant centralisés avec Zitadel IAM (OAuth2 / OIDC) et alertes SMS / Email"
     ],
-    techStack: ["Go (Golang)", "React.js", "TypeScript", "Google Maps API", "Mapbox", "Docker", "Zitadel IAM", "Traccar", "Odoo 17", "SFTP", "PostgreSQL"],
+    techStack: ["Go (Golang)", "React.js", "TypeScript", "TimescaleDB", "Google Maps API", "Mapbox", "Docker", "Zitadel IAM", "Traccar", "Odoo 17", "SFTP", "PostgreSQL"],
     metrics: {
       "Cartographie": "Google, Mapbox 3D, OSM",
       "Disponibilité": "99.9% Uptime temps réel",
@@ -351,6 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initMobileNav();
   initScrollSpy();
+  initCvDropdowns();
 });
 
 // --- GESTION DU THÈME SOMBRE / CLAIR ---
@@ -724,5 +725,54 @@ function initScrollSpy() {
         link.classList.add('active');
       }
     });
+  });
+}
+
+// --- GESTION DES MENUS DÉROULANTS CV (FR / EN) ---
+function initCvDropdowns() {
+  const dropdowns = document.querySelectorAll('.cv-dropdown');
+
+  dropdowns.forEach(dropdown => {
+    const btn = dropdown.querySelector('button');
+    if (!btn) return;
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.contains('open');
+
+      // Fermer tous les autres menus
+      dropdowns.forEach(d => {
+        if (d !== dropdown) {
+          d.classList.remove('open');
+          const b = d.querySelector('button');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      dropdown.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+    });
+  });
+
+  // Fermer le menu lors d'un clic en dehors
+  document.addEventListener('click', (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        const btn = dropdown.querySelector('button');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // Fermer avec la touche Echap
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(dropdown => {
+        dropdown.classList.remove('open');
+        const btn = dropdown.querySelector('button');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
   });
 }

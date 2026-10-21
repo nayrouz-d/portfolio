@@ -11,7 +11,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -43,15 +43,33 @@
           ☀️
         </button>
 
-        <!-- Bouton Téléchargement CV -->
-        <a href="assets/Nayrouz_Gasmi_Resume.pdf" target="_blank" download="Nayrouz_Gasmi_Resume.pdf" class="nav-btn-cv" id="nav-download-cv">
-          <span>CV</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-        </a>
+        <!-- Menu Téléchargement CV (FR / EN) -->
+        <div class="cv-dropdown" id="nav-cv-dropdown">
+          <button class="nav-btn-cv" id="nav-download-cv" aria-haspopup="true" aria-expanded="false" title="Télécharger le CV (Français / Anglais)">
+            <span>CV</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="cv-dropdown-menu">
+            <a href="assets/Nayrouz_Gasmi_CV_FR.pdf" target="_blank" download="Nayrouz_Gasmi_CV_FR.pdf" class="cv-dropdown-item">
+              <span class="flag-icon">🇫🇷</span>
+              <div class="cv-item-text">
+                <strong>CV Français</strong>
+                <small>Version FR (PDF)</small>
+              </div>
+              <span class="cv-badge">FR</span>
+            </a>
+            <a href="assets/Nayrouz_Gasmi_Resume_EN.pdf" target="_blank" download="Nayrouz_Gasmi_Resume_EN.pdf" class="cv-dropdown-item">
+              <span class="flag-icon">🇬🇧</span>
+              <div class="cv-item-text">
+                <strong>Resume English</strong>
+                <small>Version EN (PDF)</small>
+              </div>
+              <span class="cv-badge">EN</span>
+            </a>
+          </div>
+        </div>
 
         <!-- Bouton Burger Mobile -->
         <button id="mobile-toggle" class="mobile-toggle" aria-label="Menu de navigation mobile">
@@ -97,14 +115,33 @@
                 </svg>
               </a>
 
-              <a href="assets/Nayrouz_Gasmi_Resume.pdf" target="_blank" download="Nayrouz_Gasmi_Resume.pdf" class="btn-secondary" id="hero-btn-cv">
-                <span>Télécharger mon CV</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                  <polyline points="7 10 12 15 17 10"></polyline>
-                  <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-              </a>
+              <!-- Menu Téléchargement CV Hero (FR / EN) -->
+              <div class="cv-dropdown hero-cv-dropdown">
+                <button class="btn-secondary" id="hero-btn-cv" aria-haspopup="true" aria-expanded="false" title="Télécharger le CV (Français / Anglais)">
+                  <span>Télécharger mon CV</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="cv-dropdown-menu">
+                  <a href="assets/Nayrouz_Gasmi_CV_FR.pdf" target="_blank" download="Nayrouz_Gasmi_CV_FR.pdf" class="cv-dropdown-item">
+                    <span class="flag-icon">🇫🇷</span>
+                    <div class="cv-item-text">
+                      <strong>CV en Français</strong>
+                      <small>Version complète (PDF)</small>
+                    </div>
+                    <span class="cv-badge">FR</span>
+                  </a>
+                  <a href="assets/Nayrouz_Gasmi_Resume_EN.pdf" target="_blank" download="Nayrouz_Gasmi_Resume_EN.pdf" class="cv-dropdown-item">
+                    <span class="flag-icon">🇬🇧</span>
+                    <div class="cv-item-text">
+                      <strong>Resume in English</strong>
+                      <small>Full English version (PDF)</small>
+                    </div>
+                    <span class="cv-badge">EN</span>
+                  </a>
+                </div>
+              </div>
 
               <a href="https://linkedin.com/in/nairouz-gasmi" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="Profil LinkedIn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -358,6 +395,7 @@
               <h3>Données, ERP & IAM</h3>
             </div>
             <div class="skill-items-list">
+              <span class="skill-badge">TimescaleDB (IoT Series)</span>
               <span class="skill-badge">PostgreSQL</span>
               <span class="skill-badge">SQL</span>
               <span class="skill-badge">ORM / Hibernate</span>
@@ -618,6 +656,8 @@
           <li><a href="#experience">Expérience</a></li>
           <li><a href="#competences">Compétences</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/Nayrouz_Gasmi_CV_FR.pdf" target="_blank" download="Nayrouz_Gasmi_CV_FR.pdf" title="Télécharger le CV Français">🇫🇷 CV (FR)</a></li>
+          <li><a href="assets/Nayrouz_Gasmi_Resume_EN.pdf" target="_blank" download="Nayrouz_Gasmi_Resume_EN.pdf" title="Download English Resume">🇬🇧 Resume (EN)</a></li>
         </ul>
       </div>
 
@@ -629,6 +669,6 @@
   </footer>
 
   <!-- Script principal -->
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
