@@ -144,6 +144,12 @@ const I18N_DICTIONARY = {
     footer_copyright: "© 2026 Nayrouz Gasmi. Tous droits réservés.",
     footer_tagline: "Conçu avec excellence & passion pour le web moderne.",
 
+    // WhatsApp Floating Widget
+    whatsapp_online: "En ligne",
+    whatsapp_floating_msg: "Besoin d'un dev ou d'une collaboration ? Écrivez-moi sur WhatsApp ! 👋",
+    whatsapp_floating_tooltip: "Discuter sur WhatsApp (+216 29 845 823)",
+    whatsapp_bubble_action: "Ouvrir WhatsApp",
+
     // Toasts
     toast_theme_dark: "Mode Sombre activé",
     toast_theme_light: "Mode Clair activé",
@@ -289,6 +295,12 @@ const I18N_DICTIONARY = {
     footer_cv_en: "🇬🇧 Resume (EN)",
     footer_copyright: "© 2026 Nayrouz Gasmi. All rights reserved.",
     footer_tagline: "Crafted with excellence & passion for modern web engineering.",
+
+    // WhatsApp Floating Widget
+    whatsapp_online: "Online",
+    whatsapp_floating_msg: "Looking for a dev or collaboration? Let's chat on WhatsApp! 👋",
+    whatsapp_floating_tooltip: "Chat on WhatsApp (+216 29 845 823)",
+    whatsapp_bubble_action: "Open WhatsApp",
 
     // Toasts
     toast_theme_dark: "Dark mode enabled",
@@ -973,6 +985,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initScrollSpy();
   initCvDropdowns();
+  initWhatsAppWidget();
 });
 
 // --- GESTION DE LA TRADUCTION MULTILINGUE ---
@@ -1005,6 +1018,21 @@ function setLanguage(lang) {
     const key = el.getAttribute('data-i18n-placeholder');
     if (dict[key]) {
       el.setAttribute('placeholder', dict[key]);
+    }
+  });
+
+  // Traduction des infobulles et libellés d'accessibilité
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const key = el.getAttribute('data-i18n-title');
+    if (dict[key]) {
+      el.setAttribute('title', dict[key]);
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+    const key = el.getAttribute('data-i18n-aria-label');
+    if (dict[key]) {
+      el.setAttribute('aria-label', dict[key]);
     }
   });
 
@@ -1480,3 +1508,39 @@ function initCvDropdowns() {
     }
   });
 }
+
+// --- WIDGET POPUP FLOTTANT WHATSAPP (ACCESSIBLE SUR TOUTE LA PAGE) ---
+function initWhatsAppWidget() {
+  const widget = document.getElementById('whatsapp-widget');
+  const bubble = document.getElementById('whatsapp-bubble');
+  const closeBtn = document.getElementById('whatsapp-bubble-close');
+  const toggleBtn = document.getElementById('whatsapp-toggle-btn');
+  if (!widget || !bubble) return;
+
+  // Fermeture du message bulle
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      bubble.classList.add('hidden');
+      sessionStorage.setItem('nayrouz-whatsapp-bubble-closed', 'true');
+    });
+  }
+
+  // Si fermé dans la session courante, masquer au chargement
+  if (sessionStorage.getItem('nayrouz-whatsapp-bubble-closed') === 'true') {
+    bubble.classList.add('hidden');
+  }
+
+  // Clic sur le bouton flottant principal : ré-ouvre la bulle si cachée, ou ouvre WhatsApp
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', (e) => {
+      if (bubble.classList.contains('hidden')) {
+        e.preventDefault();
+        bubble.classList.remove('hidden');
+        sessionStorage.removeItem('nayrouz-whatsapp-bubble-closed');
+      }
+    });
+  }
+}
+
