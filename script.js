@@ -1424,18 +1424,32 @@ function initContactForm() {
 function initMobileNav() {
   const toggleBtn = document.getElementById('mobile-toggle');
   const navLinks = document.getElementById('nav-links');
+  const navbar = document.getElementById('navbar');
 
   if (toggleBtn && navLinks) {
-    toggleBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('mobile-open');
-      toggleBtn.innerHTML = navLinks.classList.contains('mobile-open') ? '✕' : '☰';
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navLinks.classList.toggle('mobile-open');
+      toggleBtn.innerHTML = isOpen ? '✕' : '☰';
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
-    document.querySelectorAll('.nav-link').forEach(link => {
+    // Fermer le menu lors du clic sur un lien de navigation ou bouton CV mobile
+    navLinks.querySelectorAll('.nav-link, .mobile-cv-action-btn').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('mobile-open');
         toggleBtn.innerHTML = '☰';
+        toggleBtn.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Fermer le menu si l'utilisateur clique en dehors
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('mobile-open') && navbar && !navbar.contains(e.target)) {
+        navLinks.classList.remove('mobile-open');
+        toggleBtn.innerHTML = '☰';
+        toggleBtn.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 }
