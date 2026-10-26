@@ -15,67 +15,67 @@ const I18N_DICTIONARY = {
     nav_education: "Formation",
     nav_contact: "Contact",
     nav_cv_btn: "CV",
-    nav_cv_fr_title: "CV Français",
-    nav_cv_fr_sub: "Version FR (PDF)",
-    nav_cv_en_title: "Resume English",
-    nav_cv_en_sub: "Version EN (PDF)",
+    nav_cv_fr_title: "CV en Français",
+    nav_cv_fr_sub: "Version complète (PDF)",
+    nav_cv_en_title: "Resume in English",
+    nav_cv_en_sub: "Full English version (PDF)",
 
     // Hero
-    hero_status: "Disponible pour opportunités • Full Stack & DevOps",
+    hero_status: "Disponible pour opportunités • Java / Spring Boot & Angular",
     hero_role_title: "Ingénieure Informatique",
-    hero_role_sub: "Full Stack Developer & DevOps",
-    hero_desc: "Spécialisée dans la conception d'applications web scalables, l'architecture d'APIs REST résilientes et l'automatisation de pipelines CI/CD dans le cloud. Passionnée par l'écosystème Go, React, Angular, Spring Boot et la conteneurisation Docker / Kubernetes.",
+    hero_role_sub: "Développeuse Full Stack • Java / Spring Boot & Angular",
+    hero_desc: "Ingénieure Full Stack spécialisée dans l'écosystème Java 17, Spring Boot, Microservices et Angular. Expérience confirmée dans la conception d'APIs REST résilientes, l'optimisation de bases de données (PostgreSQL, TimescaleDB), l'intégration temps réel et la conteneurisation Docker / CI/CD.",
     hero_btn_projects: "Explorer mes Projets",
     hero_btn_cv: "Télécharger mon CV",
-    hero_pill_1: "🚀 Microservices Go & Télémétrie",
-    hero_pill_2: "⚡ CI/CD Jenkins & Kubernetes",
-    hero_profile_role: "Ingénieure Informatique • Full Stack & DevOps",
+    hero_pill_1: "☕ Java 17 • Spring Boot • Microservices",
+    hero_pill_2: "⚡ Angular • TypeScript • Docker & CI/CD",
+    hero_profile_role: "Ingénieure Développeuse Full Stack • Java / Spring Boot & Angular",
     hero_stat_1_label: "Années d'Ingénierie & Projets",
-    hero_stat_2_label: "Projets Majeurs Déployés",
-    hero_stat_3_label: "Interventions manuelles réduites (ETL)",
-    hero_stat_4_label: "Conteneurisé & Automatisation CI/CD",
+    hero_stat_2_label: "Temps de Réponse DB Optimisé",
+    hero_stat_3_label: "Interventions Manuelles Réduites (Batch)",
+    hero_stat_4_label: "Code Testé & Conteneurisé",
 
     // Projects Section
     projects_badge: "Portfolio Technique",
     projects_title: "Mes Projets Réalisés",
-    projects_subtitle: "Une sélection complète de projets industriels, IoT, e-commerce et cloud conçus et déployés, classés par ordre chronologique (2026 ➔ 2024).",
+    projects_subtitle: "Une sélection complète de projets industriels, microservices, cloud et SaaS conçus et déployés avec Java, Spring Boot, Angular et PostgreSQL.",
     filter_all: "Tous les Projets",
-    filter_fullstack: "Full Stack & Web",
-    filter_iot: "IoT & Télémétrie",
-    filter_devops: "DevOps & Cloud",
-    filter_erp: "ERP & Automatisation",
-    btn_detail_features: "Voir les détails & 12 fonctionnalités",
+    filter_java: "Java & Spring Boot",
+    filter_angular: "Angular & Frontend",
+    filter_saas: "SaaS & Télémétrie",
+    filter_cloud: "Cloud & Microservices",
+    btn_detail_features: "Voir les détails & fonctionnalités",
     btn_detail_standard: "Voir les détails & architecture",
-    features_preview_title: "⚡ 12 Modules & Capacités Clés :",
-    features_preview_more: "+7 autres (Replay, Satellites, Geofencing...)",
+    features_preview_title: "⚡ Modules & Capacités Clés :",
+    features_preview_more: "+ voir toutes les fonctionnalités",
 
     // Experience Section
     exp_badge: "Parcours Professionnel",
     exp_title: "Expériences en Entreprise",
     exp_subtitle: "Interventions sur des projets à forte valeur ajoutée, de l'ingénierie logicielle au déploiement en production.",
-    exp_job1_role: "Software Engineer / Full Stack Developer",
-    exp_job1_date: "01/2026 – Aujourd'hui",
-    exp_job1_task1: "Conception et développement de la plateforme de télémétrie <strong>VMDTrac V2</strong> (React.js, TypeScript, Go) : cartographie multi-fournisseurs (Google, Mapbox 3D, OSM), module de Replay avancé et sécurisation multi-tenant avec <strong>Zitadel IAM</strong> (OAuth2 / OIDC, RBAC).",
-    exp_job1_task2: "Développement de la <strong>Plateforme de Gestion Commerciale & Calcul des Commissions</strong> : moteur de tranches progressives, Traefik, Go Gin, React TS, PostgreSQL et exports PDF.",
-    exp_job1_task3: "Conception, développement et sécurisation d'APIs REST connectées aux protocoles satellites (Garmin InReach, Iridium, terminaux SPOT).",
-    exp_job1_task4: "Développement, personnalisation et intégration de modules métier sous <strong>Odoo 17</strong> pour la gestion d'actifs et d'abonnements.",
-    exp_job1_task5: "Administration d'environnements Odoo : installation, configuration, rapports personnalisés et conteneurisation Docker.",
-    exp_job1_task6: "Participation à l'amélioration continue des processus d'ingénierie et de la qualité du code (tests, revues de code, CI).",
+    exp_job1_role: "Ingénieure Développeuse Full Stack Java / Angular",
+    exp_job1_date: "01/2026 – Présent",
+    exp_job1_task1: "<strong>VMDtrac V2 (Plateforme SaaS de tracking satellitaire & supervision de flotte)</strong> : Conçu des pipelines asynchrones d’ingestion de données télémétriques (Garmin inReach, Iridium SBD, SPOT, réseaux cellulaires), avec normalisation, déduplication et consolidation.",
+    exp_job1_task2: "<strong>Optimisation Performance Database</strong> : Réduit de <strong>40 %</strong> les temps de réponse des requêtes PostgreSQL et TimescaleDB.",
+    exp_job1_task3: "<strong>Sécurité Multi-Tenant</strong> : Sécurisé l'accès multi-tenant avec <strong>Zitadel IAM</strong> (OIDC, JWT, RBAC), garantissant l’isolation stricte des données entre clients.",
+    exp_job1_task4: "<strong>Supervision Géospatiale Temps Réel</strong> : Développé en <strong>Angular</strong> le suivi de flotte en direct, l'historique des trajets et la vue multi-équipements par client.",
+    exp_job1_task5: "<strong>Fonctionnalités Métier Critiques</strong> : Livré les modules d'alertes SOS, détection de survitesse, géofencing et notifications multicanales.",
+    exp_job1_task6: "<strong>Gestion Commerciale & Automatisation des Commissions</strong> : Automatisé le suivi des objectifs commerciaux et le calcul des commissions.",
+    exp_job1_task7: "<strong>Synchronisation Odoo 17</strong> : Synchronisé les données avec Odoo 17 via API REST (échanges bidirectionnels), supprimant les ressaisies manuelles.",
 
-    exp_job2_role: "Ingénieur Informatique Full Stack",
+    exp_job2_role: "Ingénieure Développement Full Stack Java / Angular",
     exp_job2_date: "01/2025 – 12/2025",
-    exp_job2_task1: "Conception et développement du système de gestion des étrangers et titres de séjour (<strong>تطبيقية التصرف في الأجانب</strong>) avec <strong>Spring Boot</strong> et <strong>Angular</strong>.",
-    exp_job2_task2: "Intégration de SDKs et APIs REST pour la numérisation de documents ICAO et la <strong>lecture optique / parsing automatique de la zone MRZ</strong> des passeports.",
-    exp_job2_task3: "Intégration d'équipements biométriques pour la <strong>capture et validation d'empreintes digitales</strong> lors de l'enrôlement.",
-    exp_job2_task4: "Déploiement et sécurisation des applications sur des serveurs VPS sous environnement Linux.",
-    exp_job2_task5: "Mise en place de pipelines CI/CD afin d'automatiser et fiabiliser les déploiements continus.",
+    exp_job2_task1: "Conçu des API REST <strong>Spring Boot</strong> sécurisées (JWT, <strong>Spring Security</strong>, RBAC) pour la gestion du personnel et le contrôle d’accès de plusieurs sites.",
+    exp_job2_task2: "Développé une application <strong>Angular / TypeScript</strong> (RxJS, lazy loading) synchronisée en temps réel avec plusieurs équipements biométriques.",
+    exp_job2_task3: "Intégré des SDKs et API externes, avec tests unitaires et d’intégration rigoureux (<strong>JUnit 5</strong>, <strong>Mockito</strong>).",
+    exp_job2_task4: "Automatisé les déploiements conteneurisés <strong>Docker</strong> sur Linux via des pipelines <strong>CI/CD</strong>.",
 
-    exp_job3_role: "Stagiaire Développeur Full Stack",
+    exp_job3_role: "Ingénieure Développeuse Full Stack, Stage PFE",
     exp_job3_date: "02/2024 – 09/2024",
-    exp_job3_task1: "Développement d'une plateforme de traçabilité des activités Data de bout en bout avec <strong>Spring Boot</strong> et <strong>Angular</strong>.",
-    exp_job3_task2: "Mise en place de flux <strong>Spring Batch</strong> pour automatiser l'import quotidien de gros volumes de fichiers, réduisant de <strong>90 %</strong> les interventions humaines.",
-    exp_job3_task3: "Conception et intégration d'un tableau de bord décisionnel <strong>Power BI</strong> pour l'analyse des indicateurs clés en temps réel.",
-    exp_job3_task4: "Mise en place d'un pipeline CI/CD avec <strong>Jenkins</strong> pour automatiser l'exécution des tests et le déploiement continu.",
+    exp_job3_task1: "Développé des traitements batch <strong>Spring Batch</strong> pour l’ingestion et la réconciliation de données volumineuses, réduisant de <strong>90 %</strong> les interventions manuelles quotidiennes.",
+    exp_job3_task2: "Conçu des API REST (<strong>Spring Boot</strong>, <strong>Spring Data JPA</strong>) exposant les métriques de logs aux équipes métier.",
+    exp_job3_task3: "Développé un portail de supervision <strong>Angular</strong> avec tableaux de bord intégrant <strong>Power BI</strong>.",
+    exp_job3_task4: "Mis en place une pipeline CI <strong>Jenkins</strong> intégrant tests automatisés, analyse <strong>SonarQube</strong> et builds continus.",
 
     // Skills Section
     skills_badge: "Expertise & Outils",
@@ -83,10 +83,10 @@ const I18N_DICTIONARY = {
     skills_subtitle: "Une maîtrise transverse couvrant le développement logiciel, les architectures modernes et l'infrastructure Cloud.",
     skills_cat_backend: "Backend & Architecture",
     skills_cat_frontend: "Frontend & UI/UX",
-    skills_cat_devops: "DevOps, Cloud & CI/CD",
-    skills_cat_data: "Données, ERP & IAM",
-    skills_cat_monitoring: "Monitoring & Outils",
-    skills_cat_languages: "Langues & Communication",
+    skills_cat_devops: "DevOps, Cloud & Outils",
+    skills_cat_data: "Bases de Données & ORM",
+    skills_cat_testing: "Tests & Qualité",
+    skills_cat_methods_languages: "Méthodes & Langues",
     skill_fr: "Français (C1 - Courant)",
     skill_en: "Anglais (B2 - Professionnel)",
     skill_de: "Allemand (A2 - Notions)",
@@ -96,17 +96,15 @@ const I18N_DICTIONARY = {
     edu_badge: "Cursus Académique",
     edu_title: "Diplômes & Formations",
     edu_subtitle: "Un cursus d'excellence en ingénierie logicielle et technologies numériques.",
-    edu_deg1_title: "Diplôme National d'Ingénieur en Informatique",
-    edu_deg1_school: "ESPRIT (École supérieure privée d'ingénierie et de technologie)",
-    edu_deg2_title: "Licence en Génie Logiciel et Systèmes d'Informations",
+    edu_deg1_title: "Diplôme National d’Ingénieur en Informatique — Bac+5",
+    edu_deg1_school: "ESPRIT (École Supérieure Privée d'Ingénierie et de Technologie)",
+    edu_deg2_title: "Licence en Génie Logiciel et Systèmes d’Information — Bac+3",
     edu_deg2_school: "ISSATM (Institut Supérieur des Sciences Appliquées et Technologiques de Mateur)",
-    edu_deg3_title: "Baccalauréat en Informatique",
-    edu_deg3_school: "Lycée Secondaire Route de Tabarka",
 
     // Contact Section
     contact_badge: "Contactez-Moi",
     contact_title: "Discutons de Votre Projet",
-    contact_subtitle: "Vous avez un projet innovant, un besoin d'expertise Full Stack ou DevOps ? N'hésitez pas à me contacter.",
+    contact_subtitle: "Vous avez un projet innovant, un besoin d'expertise Java, Spring Boot ou Angular ? N'hésitez pas à me contacter.",
     contact_stay_connected: "Restons Connectés",
     contact_intro: "Je réponds avec réactivité pour toute proposition de mission, opportunité d'emploi ou collaboration technique.",
     contact_email_label: "Email Professionnel",
@@ -133,7 +131,7 @@ const I18N_DICTIONARY = {
     modal_techs_title: "🛠️ Technologies Utilisées",
 
     // Footer
-    footer_role: "Ingénieure Informatique • Full Stack Developer & DevOps",
+    footer_role: "Ingénieure Développeuse Full Stack • Java / Spring Boot & Angular",
     footer_home: "Accueil",
     footer_projects: "Projets",
     footer_experience: "Expérience",
@@ -142,7 +140,7 @@ const I18N_DICTIONARY = {
     footer_cv_fr: "🇫🇷 CV (FR)",
     footer_cv_en: "🇬🇧 Resume (EN)",
     footer_copyright: "© 2026 Nayrouz Gasmi. Tous droits réservés.",
-    footer_tagline: "Conçu avec excellence & passion pour le web moderne.",
+    footer_tagline: "Conçu avec excellence & passion pour l'ingénierie logicielle.",
 
     // WhatsApp Floating Widget
     whatsapp_online: "En ligne",
@@ -173,72 +171,72 @@ const I18N_DICTIONARY = {
     nav_cv_en_sub: "EN Version (PDF)",
 
     // Hero
-    hero_status: "Available for opportunities • Full Stack & DevOps",
+    hero_status: "Available for opportunities • Java / Spring Boot & Angular",
     hero_role_title: "Software Engineer",
-    hero_role_sub: "Full Stack Developer & DevOps",
-    hero_desc: "Specialized in designing scalable web applications, resilient REST API architectures, and automated cloud CI/CD pipelines. Passionate about Go, React, Angular, Spring Boot, and Docker / Kubernetes containerization.",
+    hero_role_sub: "Full Stack Developer • Java / Spring Boot & Angular",
+    hero_desc: "Full Stack Software Engineer specialized in Java 17, Spring Boot, Microservices, and Angular. Proven expertise in engineering resilient REST APIs, database performance optimization (PostgreSQL, TimescaleDB), real-time integrations, and Docker / CI/CD automation.",
     hero_btn_projects: "Explore My Projects",
     hero_btn_cv: "Download My Resume",
-    hero_pill_1: "🚀 Go Microservices & Telemetry",
-    hero_pill_2: "⚡ Jenkins CI/CD & Kubernetes",
-    hero_profile_role: "Software Engineer • Full Stack & DevOps",
-    hero_stat_1_label: "Years of Engineering & Projects",
-    hero_stat_2_label: "Major Projects Deployed",
-    hero_stat_3_label: "Manual ETL Work Reduced",
-    hero_stat_4_label: "Containerized & CI/CD Automated",
+    hero_pill_1: "☕ Java 17 • Spring Boot • Microservices",
+    hero_pill_2: "⚡ Angular • TypeScript • Docker & CI/CD",
+    hero_profile_role: "Full Stack Software Engineer • Java / Spring Boot & Angular",
+    hero_stat_1_label: "Years of Engineering Experience",
+    hero_stat_2_label: "Database Query Latency Reduction",
+    hero_stat_3_label: "Manual Batch Ingestion Reduced",
+    hero_stat_4_label: "Tested & Containerized Code",
 
     // Projects Section
     projects_badge: "Technical Portfolio",
     projects_title: "Featured Projects",
-    projects_subtitle: "A comprehensive selection of industrial, IoT, e-commerce, and cloud projects designed and deployed, ordered chronologically (2026 ➔ 2024).",
+    projects_subtitle: "A curated showcase of enterprise, microservices, cloud, and SaaS applications built with Java, Spring Boot, Angular, and PostgreSQL.",
     filter_all: "All Projects",
-    filter_fullstack: "Full Stack & Web",
-    filter_iot: "IoT & Telemetry",
-    filter_devops: "DevOps & Cloud",
-    filter_erp: "ERP & Automation",
-    btn_detail_features: "View Details & 12 Key Features",
+    filter_java: "Java & Spring Boot",
+    filter_angular: "Angular & Frontend",
+    filter_saas: "SaaS & Telemetry",
+    filter_cloud: "Cloud & Microservices",
+    btn_detail_features: "View Details & Features",
     btn_detail_standard: "View Details & Architecture",
-    features_preview_title: "⚡ 12 Key Modules & Capabilities:",
-    features_preview_more: "+7 more (Replay, Satellites, Geofencing...)",
+    features_preview_title: "⚡ Key Modules & Capabilities:",
+    features_preview_more: "+ view all capabilities",
 
     // Experience Section
     exp_badge: "Professional Journey",
     exp_title: "Work Experience",
     exp_subtitle: "High-impact contributions on mission-critical projects, from software engineering to production deployment.",
-    exp_job1_role: "Software Engineer / Full Stack Developer",
+    exp_job1_role: "Full Stack Software Engineer (Java / Angular)",
     exp_job1_date: "01/2026 – Present",
-    exp_job1_task1: "Architecture and development of the <strong>VMDTrac V2</strong> telemetry platform (React.js, TypeScript, Go): multi-provider mapping (Google, Mapbox 3D, OSM), advanced Replay module, and multi-tenant security with <strong>Zitadel IAM</strong> (OAuth2 / OIDC, RBAC).",
-    exp_job1_task2: "Development of the <strong>Sales Management & Progressive Commission Platform</strong>: progressive tier calculation engine, Traefik, Go Gin, React TS, PostgreSQL, and PDF exports.",
-    exp_job1_task3: "Design, development, and security of REST APIs integrated with satellite protocols (Garmin InReach, Iridium, SPOT devices).",
-    exp_job1_task4: "Development, customization, and integration of custom business modules in <strong>Odoo 17</strong> for asset and telematic subscription management.",
-    exp_job1_task5: "Administration of Odoo environments: installation, setup, custom reports, and Docker containerization.",
-    exp_job1_task6: "Continuous improvement of software engineering processes and code quality (testing, code reviews, CI).",
+    exp_job1_task1: "<strong>VMDtrac V2 (SaaS Telemetry & Fleet Tracking Platform)</strong>: Engineered asynchronous ingestion pipelines for heterogeneous telemetry data (Garmin inReach, Iridium SBD, SPOT, cellular networks) with data normalization, deduplication, and consolidation.",
+    exp_job1_task2: "<strong>Database Performance Optimization</strong>: Reduced query response times by <strong>40%</strong> across high-volume PostgreSQL and TimescaleDB tables.",
+    exp_job1_task3: "<strong>Multi-Tenant Security</strong>: Secured multi-tenant access using <strong>Zitadel IAM</strong> (OIDC, JWT, RBAC), ensuring strict cross-client data isolation.",
+    exp_job1_task4: "<strong>Real-Time Geospatial Supervision</strong>: Developed <strong>Angular</strong> frontend modules for live fleet monitoring, route playback, and multi-asset customer views.",
+    exp_job1_task5: "<strong>Mission-Critical Features</strong>: Implemented SOS panic alerts, speeding detection, geofencing, and multi-channel notifications.",
+    exp_job1_task6: "<strong>Sales Management & Automated Commissions</strong>: Automated sales target tracking and multi-tier progressive commission calculations.",
+    exp_job1_task7: "<strong>Odoo 17 Synchronization</strong>: Synchronized business data with Odoo 17 via bidirectional REST APIs, eliminating manual data re-entry.",
 
-    exp_job2_role: "Full Stack Software Engineer",
+    exp_job2_role: "Full Stack Software Engineer (Java / Angular)",
     exp_job2_date: "01/2025 – 12/2025",
-    exp_job2_task1: "Design and development of the Foreign Nationals and Residence Permits Management System (<strong>تطبيقية التصرف في الأجانب</strong>) using <strong>Spring Boot</strong> and <strong>Angular</strong>.",
-    exp_job2_task2: "Integration of SDKs and REST APIs for ICAO document scanning and <strong>optical character recognition / automatic parsing of passport MRZ lines</strong>.",
-    exp_job2_task3: "Integration of biometric hardware for <strong>fingerprint capture and validation</strong> during enrollment.",
-    exp_job2_task4: "Deployment and hardening of applications on Linux VPS servers.",
-    exp_job2_task5: "Implementation of automated CI/CD pipelines for reliable continuous deployment.",
+    exp_job2_task1: "Designed secure <strong>Spring Boot</strong> REST APIs (JWT, <strong>Spring Security</strong>, RBAC) for personnel management and multi-site access control.",
+    exp_job2_task2: "Built an <strong>Angular / TypeScript</strong> application (RxJS, lazy loading) synchronized in real-time with multiple biometric hardware devices.",
+    exp_job2_task3: "Integrated external hardware SDKs and APIs with thorough unit and integration testing using <strong>JUnit 5</strong> and <strong>Mockito</strong>.",
+    exp_job2_task4: "Automated <strong>Docker</strong> container deployments on Linux VPS using reliable <strong>CI/CD</strong> pipelines.",
 
-    exp_job3_role: "Full Stack Developer Intern",
+    exp_job3_role: "Full Stack Software Engineer Intern (Master's Thesis PFE)",
     exp_job3_date: "02/2024 – 09/2024",
-    exp_job3_task1: "End-to-end development of an internal Data activity traceability and audit platform with <strong>Spring Boot</strong> and <strong>Angular</strong>.",
-    exp_job3_task2: "Implemented <strong>Spring Batch</strong> jobs for automated daily ingestion of large data files, reducing manual intervention by <strong>90%</strong>.",
-    exp_job3_task3: "Designed and integrated interactive <strong>Power BI</strong> business intelligence dashboards for real-time KPI tracking.",
-    exp_job3_task4: "Setup CI/CD pipelines with <strong>Jenkins</strong> to automate test execution and continuous deployment.",
+    exp_job3_task1: "Developed automated <strong>Spring Batch</strong> jobs for high-volume data ingestion and reconciliation, reducing daily manual effort by <strong>90%</strong>.",
+    exp_job3_task2: "Engineered REST APIs using <strong>Spring Boot</strong> and <strong>Spring Data JPA</strong> to expose audit logs and operational metrics to business teams.",
+    exp_job3_task3: "Developed an <strong>Angular</strong> supervision portal featuring interactive <strong>Power BI</strong> business intelligence dashboards.",
+    exp_job3_task4: "Implemented a <strong>Jenkins</strong> CI pipeline incorporating automated test suites, <strong>SonarQube</strong> static code analysis, and continuous builds.",
 
     // Skills Section
     skills_badge: "Expertise & Tools",
     skills_title: "Technical Skills",
-    skills_subtitle: "Cross-functional expertise covering full-stack software development, modern architectures, and Cloud infrastructure.",
+    skills_subtitle: "Cross-functional expertise covering enterprise full-stack development, modern architectures, and Cloud infrastructure.",
     skills_cat_backend: "Backend & Architecture",
     skills_cat_frontend: "Frontend & UI/UX",
-    skills_cat_devops: "DevOps, Cloud & CI/CD",
-    skills_cat_data: "Data, ERP & IAM",
-    skills_cat_monitoring: "Monitoring & Tools",
-    skills_cat_languages: "Languages & Communication",
+    skills_cat_devops: "DevOps, Cloud & Tools",
+    skills_cat_data: "Databases & ORM",
+    skills_cat_testing: "Testing & Quality",
+    skills_cat_methods_languages: "Methodologies & Languages",
     skill_fr: "French (C1 - Fluent)",
     skill_en: "English (B2 - Professional)",
     skill_de: "German (A2 - Elementary)",
@@ -248,19 +246,17 @@ const I18N_DICTIONARY = {
     edu_badge: "Academic Background",
     edu_title: "Education & Degrees",
     edu_subtitle: "Rigorous academic training in software engineering and digital technologies.",
-    edu_deg1_title: "National Engineering Diploma in Computer Science",
-    edu_deg1_school: "ESPRIT (Private Higher School of Engineering and Technology)",
-    edu_deg2_title: "Bachelor's Degree in Software Engineering & Information Systems",
+    edu_deg1_title: "National Engineering Degree in Computer Science — Master's Level (Bac+5)",
+    edu_deg1_school: "ESPRIT (Higher Private School of Engineering and Technology)",
+    edu_deg2_title: "Bachelor's Degree in Software Engineering & Information Systems (Bac+3)",
     edu_deg2_school: "ISSATM (Higher Institute of Applied Sciences and Technology of Mateur)",
-    edu_deg3_title: "High School Diploma in Computer Science",
-    edu_deg3_school: "Route de Tabarka High School",
 
     // Contact Section
     contact_badge: "Get In Touch",
     contact_title: "Let's Discuss Your Project",
-    contact_subtitle: "Have an innovative project or looking for Full Stack & DevOps expertise? Feel free to reach out.",
+    contact_subtitle: "Have an innovative project or looking for Java, Spring Boot, or Angular expertise? Feel free to reach out.",
     contact_stay_connected: "Let's Connect",
-    contact_intro: "I respond promptly to freelance inquiries, job opportunities, or technical collaborations.",
+    contact_intro: "I respond promptly to job opportunities, consulting inquiries, or technical collaborations.",
     contact_email_label: "Professional Email",
     contact_whatsapp_label: "WhatsApp & Phone",
     contact_whatsapp_badge: "WhatsApp 💬",
@@ -285,7 +281,7 @@ const I18N_DICTIONARY = {
     modal_techs_title: "🛠️ Technologies Used",
 
     // Footer
-    footer_role: "Software Engineer • Full Stack Developer & DevOps",
+    footer_role: "Full Stack Software Engineer • Java / Spring Boot & Angular",
     footer_home: "Home",
     footer_projects: "Projects",
     footer_experience: "Experience",
@@ -294,7 +290,7 @@ const I18N_DICTIONARY = {
     footer_cv_fr: "🇫🇷 Resume (FR)",
     footer_cv_en: "🇬🇧 Resume (EN)",
     footer_copyright: "© 2026 Nayrouz Gasmi. All rights reserved.",
-    footer_tagline: "Crafted with excellence & passion for modern web engineering.",
+    footer_tagline: "Crafted with excellence & passion for software engineering.",
 
     // WhatsApp Floating Widget
     whatsapp_online: "Online",
@@ -316,17 +312,18 @@ const I18N_DICTIONARY = {
 const PROJECTS_DATA = [
   {
     id: "vmdtrac-v2",
-    title: "VMDTrac V2 – Plateforme IoT & Télémétrie Satellite",
-    title_en: "VMDTrac V2 – IoT & Satellite Telemetry Fleet Platform",
-    category: "iot",
-    categoryLabel: "IoT & Télémétrie",
-    categoryLabel_en: "IoT & Telemetry",
-    contextBadge: "VMD Solutions (2026)",
-    contextBadge_en: "VMD Solutions (2026)",
+    title: "VMDtrac V2 – Plateforme SaaS de Télémétrie & Tracking Satellitaire",
+    title_en: "VMDtrac V2 – SaaS Satellite Telemetry & Real-Time Tracking Platform",
+    category: "saas",
+    categories: ["saas", "java", "angular"],
+    categoryLabel: "SaaS & Télémétrie",
+    categoryLabel_en: "SaaS & Telemetry",
+    contextBadge: "Virtual Mobile Data Solutions (2026)",
+    contextBadge_en: "Virtual Mobile Data Solutions (2026)",
     year: "2026",
     dateOrder: 202603,
-    role: "Software Engineer / Full Stack Developer",
-    role_en: "Software Engineer / Full Stack Developer",
+    role: "Ingénieure Développeuse Full Stack Java / Angular",
+    role_en: "Full Stack Software Engineer (Java / Angular)",
     icon: "🛰️",
     image: "assets/vmdtrac_live_map.png",
     gallery: [
@@ -339,458 +336,405 @@ const PROJECTS_DATA = [
       { label: "🚛 Gestion des Actifs", src: "assets/vmdtrac_create_asset.png" },
       { label: "🔐 Zitadel IAM & Accès", src: "assets/vmdtrac_interface.png" }
     ],
-    gradient: "linear-gradient(135deg, #0ea5e9, #38bdf8)",
-    shortDesc: "Supervision cartographique temps réel et géolocalisation multi-fournisseurs (Google Maps, Mapbox 3D, OSM) de flottes critiques avec ingestion de flux satellites (Garmin InReach / Iridium & SPOT), microservices Go et React.js.",
-    shortDesc_en: "Real-time fleet tracking and multi-provider mapping (Google Maps, Mapbox 3D, OSM) with satellite data ingestion (Garmin InReach / Iridium & SPOT), Go microservices, and React.js.",
+    gradient: "linear-gradient(135deg, #0284c7, #38bdf8)",
+    shortDesc: "Supervision cartographique temps réel et géolocalisation multi-fournisseurs de flottes critiques : pipelines d'ingestion asynchrones (Garmin inReach, Iridium SBD, SPOT), optimisation des requêtes PostgreSQL & TimescaleDB (-40%), sécurité multi-tenant avec Zitadel IAM et interface Angular.",
+    shortDesc_en: "Real-time fleet tracking and multi-provider mapping for critical assets: asynchronous ingestion pipelines (Garmin inReach, Iridium SBD, SPOT), PostgreSQL & TimescaleDB query optimization (-40%), multi-tenant Zitadel IAM security, and reactive Angular UI.",
     highlights: [
-      "Cartographie temps réel interactive : Google Terrain, Mapbox 3D, OSM, Esri, multi-vues (Split-screen) et géofencing",
-      "Module Replay avancé : parcours historique (24h, 7j, 30j), profils de vitesse, arrêts et lecture pas-à-pas",
-      "Architecture microservices en Go : Ingestion haute fréquence, Feed Relay satellite et Aggregation Service",
-      "Ingestion des protocoles Garmin InReach, balises Iridium SBD, terminaux SPOT et passerelle SFTP",
-      "Sécurité et contrôle d'accès multi-tenant centralisés avec Zitadel IAM (OAuth2 / OIDC) et alertes SMS / Email"
+      "Pipelines asynchrones d'ingestion de flux satellitaires (Garmin inReach, Iridium SBD, SPOT, réseaux cellulaires)",
+      "Optimisation de la performance base de données : réduction de 40 % des temps de réponse (PostgreSQL & TimescaleDB)",
+      "Sécurisation multi-tenant étanche avec Zitadel IAM (OAuth2 / OIDC, JWT, RBAC) et isolation stricte des données",
+      "Supervision géospatiale Angular temps réel : suivi de flotte en direct, historique des trajets et module de Replay",
+      "Modules d'alertes critiques : détection de survitesse, franchissement de géofence, panique SOS et synchro Odoo 17"
     ],
     highlights_en: [
-      "Real-time interactive mapping: Google Terrain, Mapbox 3D, OSM, Esri, split-screen views and geofencing",
-      "Advanced Replay module: historical route playback (24h, 7d, 30d), speed profiles, stops, and step-by-step scrubber",
-      "High-performance Go microservices: high-frequency ingestion, satellite feed relay, and aggregation service",
-      "Ingestion of Garmin InReach, Iridium SBD beacons, SPOT devices, and SFTP gateway",
-      "Centralized multi-tenant IAM security with Zitadel (OAuth2 / OIDC) and multi-channel SMS / Email alerts"
+      "Asynchronous ingestion pipelines for satellite telemetry (Garmin inReach, Iridium SBD, SPOT, cellular networks)",
+      "Database performance optimization: 40% reduction in query response times across PostgreSQL & TimescaleDB",
+      "Robust multi-tenant security with Zitadel IAM (OAuth2 / OIDC, JWT, RBAC) ensuring strict client data isolation",
+      "Real-time Angular geospatial supervision: live fleet monitoring, historical route replay, and multi-asset views",
+      "Mission-critical modules: speeding detection, geofencing breaches, SOS panic alerts, and Odoo 17 REST sync"
     ],
-    techStack: ["Go (Golang)", "React.js", "TypeScript", "TimescaleDB", "Google Maps API", "Mapbox", "Docker", "Zitadel IAM", "Traccar", "Odoo 17", "SFTP", "PostgreSQL"],
+    techStack: ["Java 17", "Spring Boot", "Angular", "TypeScript", "PostgreSQL", "TimescaleDB", "Zitadel IAM", "Docker", "Odoo 17", "API REST"],
     metrics: {
-      "Cartographie": "Google, Mapbox 3D, OSM",
-      "Disponibilité": "99.9% Uptime temps réel",
-      "Architecture": "Microservices Go",
-      "Télémétrie": "Garmin, Iridium, SPOT"
+      "Performance DB": "-40% temps de réponse",
+      "Sécurité": "Zitadel IAM Multi-Tenant",
+      "Télémétrie": "Garmin, Iridium, SPOT",
+      "Synchronisation": "Odoo 17 REST API"
     },
     metrics_en: {
-      "Mapping": "Google, Mapbox 3D, OSM",
-      "Uptime": "99.9% Real-time availability",
-      "Architecture": "Go Microservices",
-      "Telemetry": "Garmin, Iridium, SPOT"
+      "DB Performance": "-40% query response time",
+      "Security": "Multi-Tenant Zitadel IAM",
+      "Telemetry": "Garmin, Iridium, SPOT",
+      "Synchronization": "Odoo 17 REST API"
     },
     platformFeatures: [
       {
         icon: "🗺️",
-        title: "Carte en Direct (Real-time Asset & Fleet Tracking)",
-        desc: "Supervision continue et dynamique de l'ensemble de la flotte avec actualisation sous la seconde des coordonnées GPS, des indicateurs d'état et du cap des véhicules."
+        title: "Carte en Direct (Real-time Fleet Supervision)",
+        desc: "Supervision continue de l'ensemble de la flotte avec actualisation sous la seconde des coordonnées GPS, des indicateurs d'état et du cap des véhicules."
       },
       {
         icon: "🌐",
-        title: "Cartographie Multi-Fournisseurs (Enhanced Mapping & Geolocation)",
-        desc: "Bascule instantanée entre Google Maps (Terrain, Satellite, Routier), 3D Mapbox, OpenStreetMap (OSM), Stadia et Esri sans rechargement de page."
+        title: "Cartographie Multi-Fournisseurs (Multi-Provider Mapping)",
+        desc: "Bascule instantanée entre Google Maps, Mapbox 3D, OpenStreetMap (OSM) et Esri pour une lisibilité optimale sur le terrain."
       },
       {
         icon: "⏪",
-        title: "Replay & Trajectoires Historiques (Route Playback & Telemetry)",
-        desc: "Rejouer l'historique complet des déplacements avec sélecteur de période, résolution temporelle, distance totale et barre de contrôle interactive."
+        title: "Replay & Trajectoires Historiques (Route Playback)",
+        desc: "Reconstitution exacte des parcours avec sélecteur de période, profils de vitesse, arrêts et lecture pas-à-pas sur la chronologie."
       },
       {
         icon: "🚩",
-        title: "Gestion des Missions & Checkpoints (Missions & Checkpoints)",
-        desc: "Définition, affectation et suivi d'itinéraires opérationnels avec validation automatique des points de passage obligatoires et horodatage certifié."
+        title: "Gestion des Missions & Checkpoints",
+        desc: "Définition, affectation et suivi d'itinéraires opérationnels avec validation automatique des points de passage obligatoires."
       },
       {
         icon: "📍",
-        title: "Géofencing & Surveillance Spatiale (Geofencing Monitoring)",
-        desc: "Délimitation de zones géographiques polygonales ou circulaires, alertes en temps réel sur entrée/sortie de périmètre et limitations de vitesse."
+        title: "Géofencing & Surveillance Spatiale",
+        desc: "Délimitation de zones géographiques polygonales ou circulaires avec alertes instantanées sur entrée, sortie et limitations."
       },
       {
         icon: "🔔",
-        title: "Système d'Alertes Multi-Canaux (SMS, Email & Push)",
-        desc: "Détection immédiate d'anomalies critiques (bouton panique SOS, dépassement de vitesse, sortie de zone) avec diffusion instantanée par SMS et courriels."
+        title: "Système d'Alertes Multi-Canaux",
+        desc: "Détection immédiate d'anomalies critiques (bouton panique SOS, dépassement de vitesse) diffusées en temps réel par SMS et email."
       },
       {
         icon: "🔐",
-        title: "Sécurité & IAM Centralisé Zitadel (Secure User & Access Management)",
-        desc: "Gestion multi-tenant stricte et gouvernance des identités propulsées par Zitadel IAM : authentification OAuth2 / OIDC, rôles RBAC et tokens JWT vérifiés."
+        title: "Sécurité & IAM Centralisé Zitadel",
+        desc: "Contrôle d'accès multi-tenant propulsé par Zitadel IAM : authentification OIDC, rôles RBAC et tokens JWT vérifiés."
       },
       {
         icon: "🚛",
-        title: "Gestion des Actifs & Unités (Asset & Unit Management)",
-        desc: "Gestion centralisée du parc de véhicules, engins et bateaux avec association dynamique des boîtiers GPS, numéros IMEI et caractéristiques."
+        title: "Gestion des Actifs & Boîtiers Télématiques",
+        desc: "Inventaire dynamique du parc de véhicules, engins et bateaux avec association des numéros IMEI et protocoles."
       },
       {
         icon: "📊",
-        title: "Tableaux de Bord Avancés & Reporting (Advanced Dashboards)",
-        desc: "Indicateurs de performance opérationnelle en temps réel : synthèses d'activité, taux d'utilisation de la flotte et kilométrages cumulés."
+        title: "Tableaux de Bord & KPIs Opérationnels",
+        desc: "Synthèses d'activité, taux d'utilisation de la flotte, distances cumulées et temps de conduite journaliers."
       },
       {
         icon: "📥",
-        title: "Export de Données Multi-Formats (Data Export in PDF & XLSX)",
-        desc: "Génération et téléchargement en un clic de rapports d'activité et bilans de missions aux formats normalisés PDF et feuilles de calcul Excel."
+        title: "Export de Rapports Normalisés (PDF & XLSX)",
+        desc: "Génération automatique et téléchargement en un clic de rapports d'activité et bilans de mission."
       },
       {
         icon: "🛰️",
-        title: "Technologies Satellitaires (Satellite Communication Integration)",
-        desc: "Intégration native des flux satellitaires Garmin InReach, Iridium SBD et terminaux SPOT pour une couverture mondiale hors réseau cellulaire."
+        title: "Connectivité Satellitaire Mondiale",
+        desc: "Prise en charge native des flux Garmin InReach, Iridium SBD et terminaux SPOT pour les zones hors couverture GSM."
       },
       {
         icon: "💻",
-        title: "Interface Ergonomique & Responsive (Modern Responsive UI)",
-        desc: "Interface moderne développée avec React.js et TypeScript : mode Sombre / Clair, multi-vues et compatibilité totale mobile et tablette."
+        title: "Interface Réactive & Ergonomie Angular",
+        desc: "Interface moderne en Angular et TypeScript : composants réactifs, mode Sombre / Clair et compatibilité responsive."
       }
     ],
     deepDive: {
-      challenge: "Développer une plateforme cartographique unifiée et ultra-réactive capable de superviser des flottes critiques réparties sur tout le territoire, d'absorber simultanément des flux de données satellites hétérogènes (Garmin, Iridium, SPOT) et de proposer des outils d'analyse rétrospective (Replay) précis sans latence.",
-      solution: "Conception d'une architecture microservices résiliente en Go (Feed-Relay haute performance pour l'ingestion satellite, service d'agrégation, passerelle SFTP) couplée à un frontend moderne en React.js et TypeScript avec bascule multi-fournisseurs (Google Maps, Mapbox 3D), lecteur de replay temporel, IAM Zitadel et interconnexion avec Odoo 17.",
+      challenge: "Développer une plateforme SaaS temps réel capable de traiter simultanément des flux hétérogènes de télémétrie satellitaire et cellulaire pour des flottes critiques, de stocker et requêter des millions de coordonnées GPS sans latence, et d'assurer une étanchéité multi-tenant absolue.",
+      solution: "Conception de pipelines d'ingestion asynchrones robustes, modélisation optimisée sous PostgreSQL et TimescaleDB (hyper-tables, index spatiaux, politiques de rétention), sécurisation Zero Trust via Zitadel IAM (OAuth2/OIDC, RBAC) et interface interactive développée sous Angular avec cartographie multi-fournisseurs et module de replay temporel.",
       results: [
-        "Supervision temps réel sous la seconde et visualisation cartographique fluide de flottes sur Google Maps, Mapbox 3D et OSM",
-        "Module de replay interactif avec reconstitution exacte des trajectoires (ex: 865.4 km parcourus à travers la Tunisie avec profils de vitesse et arrêts)",
-        "Couverture satellitaire mondiale ininterrompue pour les zones isolées (désert du Sahara, offshore, transfrontalier) via Garmin InReach, Iridium SBD et SPOT",
-        "Authentification centralisée & sécurité Zero Trust avec Zitadel IAM : gestion multi-tenant étanche, OAuth2 / OIDC, rôles RBAC et tokens JWT signés",
-        "Réactivité opérationnelle immédiate grâce aux alertes multi-canaux (SMS, email, push) sur franchissement de géofence, survitesse et bouton panique SOS",
-        "Pipeline d'ingestion haute performance en Go garantissant zéro perte de trames télémétriques avec disponibilité continue (99.9% uptime)",
-        "Synchronisation bidirectionnelle avec Odoo 17 pour la facturation automatisée des abonnements télématiques et la gestion du parc d'actifs"
+        "Réduction prouvée de 40 % des temps de réponse des requêtes sur les tables volumineuses de télémétrie",
+        "Supervision cartographique sous la seconde avec bascule fluide Google Maps, Mapbox 3D et OSM",
+        "Replay historique complet avec reconstitution fidèle des trajectoires et profils de vitesse",
+        "Garantie d'isolation stricte des données entre clients grâce à Zitadel IAM et aux tokens JWT signés",
+        "Synchronisation bidirectionnelle fluide avec Odoo 17 pour la facturation et la gestion des abonnements"
       ]
     },
     deepDive_en: {
-      challenge: "Develop a unified, ultra-responsive mapping platform capable of monitoring critical fleets nationwide, ingesting heterogeneous satellite feeds (Garmin, Iridium, SPOT) with zero loss, and providing historical route replay without latency.",
-      solution: "Built a resilient Go microservices architecture (high-throughput satellite feed relay, aggregation service, SFTP gateway) paired with a modern React.js + TypeScript frontend featuring multi-provider map switching, temporal route scrubber, Zitadel IAM, and Odoo 17 ERP integration.",
+      challenge: "Develop a high-reliability real-time SaaS platform capable of ingesting heterogeneous satellite and cellular telemetry streams for critical fleets, querying millions of GPS data points with zero latency, and enforcing strict multi-tenant isolation.",
+      solution: "Engineered robust asynchronous ingestion pipelines, optimized data architectures with PostgreSQL and TimescaleDB hyper-tables, secured access with Zitadel IAM (OAuth2/OIDC, RBAC), and built a responsive Angular UI with multi-provider map switching and historical route replay.",
       results: [
-        "Sub-second real-time fleet supervision with fluid map rendering on Google Maps, Mapbox 3D, and OSM",
-        "Interactive replay module reconstructing exact trajectories across Tunisia with speed profiles and stops",
-        "Uninterrupted global satellite coverage for off-grid areas (Sahara desert, offshore, cross-border) via Garmin InReach, Iridium SBD, and SPOT",
-        "Centralized Zero-Trust authentication with Zitadel IAM: strict multi-tenancy, OAuth2 / OIDC, RBAC roles, and signed JWTs",
-        "Immediate operational responsiveness with multi-channel alerts (SMS, email, push) on geofence breaches, speeding, and SOS panic buttons",
-        "High-performance Go ingestion pipeline guaranteeing zero packet loss with continuous 99.9% uptime",
-        "Bidirectional synchronization with Odoo 17 for automated telematic billing and asset fleet management"
+        "40% reduction in database query latency across massive time-series telemetry datasets",
+        "Sub-second real-time fleet supervision with seamless switching between Google Maps, Mapbox 3D, and OSM",
+        "Full historical replay module accurately reconstructing routes, speed profiles, and idle times",
+        "Strict client data isolation ensured by Zitadel IAM and cryptographically signed JWT tokens",
+        "Seamless bidirectional REST synchronization with Odoo 17 for automated telematic billing"
       ]
     }
   },
   {
-    id: "vmd-commission",
-    title: "VMD Gestion Commerciale & Calcul des Commissions",
-    title_en: "VMD Sales Management & Progressive Commission Engine",
-    category: "fullstack",
-    categoryLabel: "Full Stack & FinTech",
-    categoryLabel_en: "Full Stack & FinTech",
-    contextBadge: "VMD Solutions (2026)",
-    contextBadge_en: "VMD Solutions (2026)",
+    id: "vente-gestion-commerciale",
+    title: "Plateforme Web de Vente & Gestion Commerciale",
+    title_en: "Enterprise Sales & Commercial Operations Web Platform",
+    category: "java",
+    categories: ["java", "angular", "saas"],
+    categoryLabel: "Java & Spring Boot",
+    categoryLabel_en: "Java & Spring Boot",
+    contextBadge: "En Production Réelle (2026)",
+    contextBadge_en: "In Active Production (2026)",
     year: "2026",
     dateOrder: 202602,
-    role: "Software Engineer / Full Stack Developer",
-    role_en: "Software Engineer / Full Stack Developer",
+    role: "Ingénieure Développeuse Full Stack Java / Angular",
+    role_en: "Full Stack Software Engineer (Java / Angular)",
     icon: "📈",
     image: "assets/vmd_commission_dashboard.png",
     gradient: "linear-gradient(135deg, #f97316, #fb923c)",
-    shortDesc: "Plateforme web de pilotage des ventes, de gestion de la relation client et de calcul automatisé des commissions progressives par paliers (Go Gin, React TS, PostgreSQL, Traefik, Docker).",
-    shortDesc_en: "Web platform for sales performance tracking, CRM pipeline management, and automated progressive commission calculation by quota tiers (Go Gin, React TS, PostgreSQL, Traefik, Docker).",
+    shortDesc: "Conception et déploiement en production réelle d'une plateforme web complète pour la gestion commerciale et les ventes : backend REST Spring Boot & Spring Data JPA, persistance relationnelle PostgreSQL, interface Angular réactive et déploiement Linux Nginx.",
+    shortDesc_en: "End-to-end design and production deployment of a complete commercial sales management platform: Spring Boot & Spring Data JPA REST backend, PostgreSQL persistence, reactive Angular frontend, and Linux Nginx deployment.",
     highlights: [
-      "Moteur de calcul automatisé des commissions progressives par tranches (0-70%, 70-90%, 90-100%, 100-120%, >120%)",
-      "Tableaux de bord de direction : Vue globale Direction, KPIs en direct, objectifs annuels et suivi par commercial",
-      "Workflow de validation des ventes à double niveau : Commercial ➔ BackOffice ➔ Validation Direction",
-      "Planification hebdomadaire des commerciaux, rapports d'activité et export dynamique PDF / Image",
-      "Module d'extraction automatique de devis et factures par analyse optique et règles heuristiques"
+      "Backend REST modulaire développé avec Spring Boot, Spring MVC et Spring Data JPA avec validation métier stricte",
+      "Interface utilisateur réactive et intuitive développée avec Angular, TypeScript et composants Angular Material",
+      "Modélisation relationnelle avancée et persistance optimisée sous PostgreSQL",
+      "Moteur de calcul automatisé des objectifs commerciaux et des commissions progressives par paliers",
+      "Déploiement et sécurisation de l'application sur serveur Linux avec reverse proxy Nginx et SSL"
     ],
     highlights_en: [
-      "Automated progressive tier commission engine (0-70%, 70-90%, 90-100%, 100-120%, >120%)",
-      "Executive dashboards: Global leadership view, live KPIs, annual revenue targets, and sales rep performance",
-      "Two-stage sale validation workflow: Sales Rep ➔ BackOffice ➔ Executive Approval",
-      "Weekly planning for sales reps, activity reports, and dynamic PDF/Image exports",
-      "Automatic invoice and quote extraction module with optical parsing and heuristic rules"
+      "Modular REST backend built with Spring Boot, Spring MVC, and Spring Data JPA with robust business validation",
+      "Modern, responsive user interface developed with Angular, TypeScript, and Angular Material components",
+      "Advanced relational data modeling and optimized persistence powered by PostgreSQL",
+      "Automated progressive tier commission calculation engine aligning sales performance with company targets",
+      "Hardened deployment and configuration on Linux servers fronted by Nginx reverse proxy and SSL"
     ],
-    techStack: ["Go (Golang)", "Gin Gonic", "React (TS)", "Vite", "GORM", "PostgreSQL 16", "Traefik v3.1", "Docker", "Tailwind CSS", "Recharts", "jsPDF"],
+    techStack: ["Java 11/17", "Spring Boot", "Spring Data JPA", "Spring MVC", "Angular", "Angular Material", "TypeScript", "PostgreSQL", "Nginx", "Linux"],
     metrics: {
-      "Objectif Global": "8.5M+ TND supervisés",
-      "Architecture": "Go Gin + React TS",
-      "Calcul Commissions": "Tranches progressives auto",
-      "Sécurité": "RBAC & Traefik Proxy"
+      "Statut": "En Production Réelle",
+      "Architecture": "Spring Boot REST + Angular",
+      "Base de Données": "PostgreSQL & JPA",
+      "Hébergement": "Linux & Nginx"
     },
     metrics_en: {
-      "Tracked Volume": "8.5M+ TND supervised",
-      "Architecture": "Go Gin + React TS",
-      "Commissions": "Automated progressive tiers",
-      "Security": "RBAC & Traefik Proxy"
+      "Status": "In Active Production",
+      "Architecture": "Spring Boot REST + Angular",
+      "Database": "PostgreSQL & JPA",
+      "Hosting": "Linux & Nginx"
     },
     deepDive: {
-      challenge: "L'équipe commerciale utilisait des processus manuels fastidieux pour consolider les ventes et calculer des commissions progressives complexes avec règles de bonus d'entreprise et multi-devises (TND / EUR / USD), générant des retards et des risques d'erreurs.",
-      solution: "Développement d'une suite applicative conteneurisée avec Traefik. Backend haute performance en Go (Gin) intégrant un moteur de calcul par paliers d'objectifs, schéma PostgreSQL géré par GORM, interface React avec Tailwind CSS, graphiques Recharts, export PDF et module d'extraction automatique de devis.",
+      challenge: "Remplacer des processus de gestion commerciale fragmentés et des calculs manuels de commissions par une solution web unifiée, hautement disponible, sécurisée et capable de s'adapter aux règles d'objectifs de vente en constante évolution.",
+      solution: "Conception d'une architecture client-serveur découplée : backend Spring Boot respectant les principes Clean Code et l'injection de dépendances, mapping relationnel via Spring Data JPA avec requêtes JPQL optimisées sur PostgreSQL, et frontend Angular réactif exploitant Angular Material pour une navigation fluide et des tableaux de bord dynamiques.",
       results: [
-        "Automatisation intégrale du calcul des commissions personnelles, bonus collectifs et primes managériales",
-        "Visibilité immédiate de la direction sur le CA validé, en attente et l'atteinte des objectifs de l'équipe",
-        "Gain de temps considérable pour les commerciaux grâce au planning hebdomadaire et aux rapports instantanés"
+        "Plateforme déployée et exploitée en production réelle avec haute fiabilité",
+        "Automatisation intégrale des calculs de commissions, supprimant les erreurs de saisie et les contestations",
+        "Temps de consultation et de validation des ventes réduit significativement pour les managers",
+        "Haute performance garantie grâce à l'optimisation Nginx et aux index PostgreSQL ciblés"
       ]
     },
     deepDive_en: {
-      challenge: "Sales teams relied on tedious manual spreadsheets to consolidate sales and compute complex tiered commission structures with company bonus rules across multiple currencies (TND / EUR / USD), leading to delays and human error.",
-      solution: "Engineered a containerized microservices application behind Traefik. High-performance Go (Gin) backend with a quota-tier math engine, GORM-managed PostgreSQL schema, responsive React frontend with Tailwind CSS, Recharts visualizations, and automated quote parsing.",
+      challenge: "Replace fragmented sales tracking spreadsheets and tedious manual commission calculations with a unified, highly available, and secure web application adapting to evolving sales quota rules.",
+      solution: "Engineered a decoupled client-server architecture: robust Spring Boot REST backend adhering to Clean Code and dependency injection, Spring Data JPA mapping with optimized JPQL queries on PostgreSQL, and a responsive Angular frontend leveraging Angular Material for intuitive dashboards.",
       results: [
-        "Full automation of personal commissions, collective team bonuses, and managerial incentives",
-        "Instant executive visibility into approved revenue, pending sales, and team quota achievements",
-        "Significant time savings for sales reps with automated weekly scheduling and one-click reporting"
+        "Platform deployed and running smoothly in active enterprise production",
+        "Full automation of quota-tier commission computations, eliminating manual overhead and discrepancies",
+        "Drastic reduction in approval cycle times for commercial managers and executive leadership",
+        "Exceptional performance and uptime delivered through Nginx reverse proxy caching and targeted PostgreSQL indexes"
       ]
     }
   },
   {
-    id: "odoo-erp-suite",
-    title: "Modules Métier & Personnalisation Odoo 17",
-    title_en: "Odoo 17 Custom Business Modules & Automation",
-    category: "erp",
-    categoryLabel: "ERP & Automatisation",
-    categoryLabel_en: "ERP & Automation",
-    contextBadge: "VMD Solutions (2026)",
-    contextBadge_en: "VMD Solutions (2026)",
-    year: "2026",
-    dateOrder: 202601,
-    role: "Développeur & Admin Odoo",
-    role_en: "Odoo Developer & Administrator",
-    icon: "💼",
-    gradient: "linear-gradient(135deg, #8b5cf6, #c084fc)",
-    shortDesc: "Développement sur-mesure de modules métier Odoo 17, interconnexion avec les flux de géolocalisation et automatisation de processus d'entreprise.",
-    shortDesc_en: "Custom Odoo 17 module development, seamless REST API integration with real-time tracking pipelines, and automated enterprise workflows.",
+    id: "ecommerce-microservices-cloud",
+    title: "Application E-Commerce Distribuée & Cloud-Native",
+    title_en: "Distributed Cloud-Native E-Commerce Platform",
+    category: "cloud",
+    categories: ["cloud", "java", "angular"],
+    categoryLabel: "Cloud & Microservices",
+    categoryLabel_en: "Cloud & Microservices",
+    contextBadge: "Microservices & Kubernetes (2025)",
+    contextBadge_en: "Microservices & Kubernetes (2025)",
+    year: "2025",
+    dateOrder: 202512,
+    role: "Ingénieure Full Stack & Cloud",
+    role_en: "Full Stack & Cloud Engineer",
+    icon: "🛍️",
+    image: "assets/ecommerce_hero.png",
+    gallery: [
+      { label: "🛍️ Catalogue & Boutique", src: "assets/ecommerce_hero.png" },
+      { label: "🏷️ Logo Sniper Phone", src: "assets/sniper_phone_logo.jpg" }
+    ],
+    gradient: "linear-gradient(135deg, #0284c7, #2563eb)",
+    shortDesc: "Architecture microservices distribuée résiliente propulsée par Spring Boot : catalogue, commandes, authentification et API Gateway. Frontend dynamique Angular (TypeScript, RxJS), conteneurisation Docker, orchestration Kubernetes et pipeline CI/CD GitLab CI.",
+    shortDesc_en: "Resilient distributed microservices architecture powered by Spring Boot: catalog, orders, authentication, and API Gateway. Dynamic Angular frontend (TypeScript, RxJS), Docker containerization, Kubernetes orchestration, and GitLab CI/CD pipeline.",
     highlights: [
-      "Conception de modules Odoo 17 pour la gestion d'actifs et d'abonnements télématiques",
-      "Interfaçage API REST entre Odoo et les microservices de tracking VMDTrac",
-      "Génération automatisée de rapports, factures et tableaux de bord financiers",
-      "Administration système, déploiement Docker et sécurisation des bases de données Odoo"
+      "Découpage en microservices indépendants sous Spring Boot : Service Authentification, Catalogue, Commandes et API Gateway",
+      "Frontend dynamique et modulaire développé avec Angular, TypeScript, RxJS et chargement différé (Lazy Loading)",
+      "Conteneurisation multi-stage avec Docker et orchestration des déploiements sur cluster Kubernetes",
+      "Pipeline CI/CD GitLab CI automatisé avec tests unitaires, analyse de code et déploiement continu",
+      "Persistance relationnelle isolée sous PostgreSQL avec schémas dédiés et résilience réseau"
     ],
     highlights_en: [
-      "Custom Odoo 17 modules for asset inventory and recurring telematic subscription management",
-      "Bi-directional REST API interface connecting Odoo with VMDTrac telemetry services",
-      "Automated generation of monthly customer billing, accounting reports, and financial dashboards",
-      "System administration, Dockerized deployments, and database security for Odoo environments"
+      "Modular microservices decoupling with Spring Boot: Auth Service, Catalog, Orders, and API Gateway",
+      "Dynamic and reactive frontend built with Angular, TypeScript, RxJS, and route-based Lazy Loading",
+      "Multi-stage Docker containerization and resilient pod orchestration on Kubernetes clusters",
+      "Automated GitLab CI/CD pipeline featuring automated unit tests, code analysis, and continuous deployment",
+      "Isolated relational persistence per service using PostgreSQL with resilient communication patterns"
     ],
-    techStack: ["Python", "Odoo 17", "PostgreSQL", "XML", "API REST", "Docker", "Linux"],
+    techStack: ["Java 17", "Spring Boot Microservices", "Spring Security", "Angular", "TypeScript", "RxJS", "Docker", "Kubernetes", "GitLab CI/CD", "PostgreSQL"],
     metrics: {
-      "ERP Version": "Odoo 17 Enterprise",
-      "Modules": "Sur-mesure",
-      "Interconnexion": "API REST Temps Réel",
-      "Données": "PostgreSQL Dédié"
+      "Architecture": "Microservices Spring Boot",
+      "Orchestration": "Cluster Kubernetes",
+      "CI/CD": "GitLab CI Automatisé",
+      "Frontend": "Angular & RxJS"
     },
     metrics_en: {
-      "ERP Version": "Odoo 17 Enterprise",
-      "Modules": "Custom Tailored",
-      "Integration": "Real-time REST API",
-      "Database": "Dedicated PostgreSQL"
+      "Architecture": "Spring Boot Microservices",
+      "Orchestration": "Kubernetes Cluster",
+      "CI/CD": "Automated GitLab CI",
+      "Frontend": "Angular & RxJS"
     },
     deepDive: {
-      challenge: "Éliminer la double saisie entre la plateforme de télémétrie VMDTrac et le logiciel de gestion de facturation et d'actifs de l'entreprise.",
-      solution: "Développement d'un module Odoo dédié qui interroge et reçoit les événements de VMDTrac via API REST, synchronise les numéros IMEI des boîtiers, met à jour les statuts de compte et automatise la facturation.",
+      challenge: "Concevoir une plateforme de commerce électronique à haute scalabilité capable d'encaisser des pics de trafic, de garantir un découplage sans point de défaillance unique (No SPOF) et de permettre des déploiements sans interruption de service.",
+      solution: "Architecture orientée microservices bâtie sur Spring Boot et Spring Cloud (API Gateway, découverte de services, gestion de configuration). Chaque service est conteneurisé via des images Docker optimisées et orchestré sur Kubernetes avec des règles d'autoscaling. L'interface Angular assure une expérience utilisateur réactive grâce à RxJS.",
       results: [
-        "Suppression totale des redondances de données et des erreurs de saisie",
-        "Génération en un clic des rapports mensuels pour les clients abonnés",
-        "Mise à niveau sereine vers Odoo 17 avec une base de code documentée et maintenable"
+        "Scalabilité horizontale indépendante pour chaque domaine métier (commandes, panier, catalogue)",
+        "Pipeline de déploiement continu GitLab CI automatisant l'intégralité du cycle de release",
+        "Disponibilité maximale et tolérance aux pannes assurée par l'orchestrateur Kubernetes",
+        "Expérience client fluide avec panier réactif et temps de chargement inférieur à la seconde"
       ]
     },
     deepDive_en: {
-      challenge: "Eliminate double-entry between the VMDTrac telemetry tracking system and company ERP billing and customer management tools.",
-      solution: "Developed a custom Odoo module that listens to VMDTrac webhooks and REST endpoints, automatically syncs GPS IMEI identifiers, updates customer subscription statuses, and generates recurring invoices.",
+      challenge: "Design a high-scalability e-commerce platform capable of handling traffic spikes, eliminating single points of failure (No SPOF), and enabling zero-downtime rolling updates.",
+      solution: "Built a microservices-based architecture on Spring Boot and Spring Cloud (API Gateway, service discovery, configuration management). Each service is containerized via lightweight Docker images and orchestrated on Kubernetes with autoscaling policies. The Angular frontend delivers a snappy UI via RxJS state management.",
       results: [
-        "Complete elimination of data redundancies and manual data-entry errors",
-        "One-click monthly billing and automated account statement generation for subscribed clients",
-        "Smooth upgrade to Odoo 17 with clean, documented, and maintainable codebase"
+        "Independent horizontal scalability for distinct business domains (Orders, Cart, Catalog)",
+        "Automated GitLab CI pipeline executing test suites, container publishing, and zero-downtime rollouts",
+        "High fault-tolerance and self-healing resilience enforced by Kubernetes",
+        "Sub-second page transitions and seamless interactive cart drawer for end-users"
       ]
     }
   },
   {
     id: "smltp-foreigners",
-    title: "Gestion des Étrangers & Enrôlement Biométrique",
-    title_en: "Foreign Nationals Management & Biometric Enrollment",
-    category: "fullstack",
-    categoryLabel: "Biométrie & Documents Officiels",
-    categoryLabel_en: "Biometrics & Official Documents",
+    title: "Gestion des Titres de Séjour & Enrôlement Biométrique",
+    title_en: "Residence Permits & Biometric Enrollment System",
+    category: "angular",
+    categories: ["angular", "java"],
+    categoryLabel: "Angular & Frontend",
+    categoryLabel_en: "Angular & Frontend",
     contextBadge: "SMLTP (2025)",
     contextBadge_en: "SMLTP (2025)",
     year: "2025",
     dateOrder: 202511,
-    role: "Ingénieur Informatique Full Stack",
-    role_en: "Full Stack Software Engineer",
+    role: "Ingénieure Développement Full Stack Java / Angular",
+    role_en: "Full Stack Software Engineer (Java / Angular)",
     icon: "🛂",
     image: "assets/smltp_foreigners_management.png",
-    gradient: "linear-gradient(135deg, #10b981, #34d399)",
-    shortDesc: "Système officiel (تطبيقية التصرف في الأجانب) d'identification sécurisée : numérisation de passeports ICAO, reconnaissance automatique de zone MRZ, capture d'empreintes biométriques et suivi des séjours.",
-    shortDesc_en: "Official government identity management system: ICAO passport scanning, automatic optical MRZ zone parsing, biometric fingerprint capture, and residence permit tracking.",
+    gradient: "linear-gradient(135deg, #10b981, #059669)",
+    shortDesc: "Système officiel d'identification sécurisée et contrôle d'accès multi-sites : API REST Spring Boot sécurisées (Spring Security, JWT, RBAC), application Angular / TypeScript réactive synchronisée en temps réel avec des équipements biométriques et tests rigoureux JUnit 5 / Mockito.",
+    shortDesc_en: "Mission-critical identity management and multi-site access control system: secure Spring Boot REST APIs (Spring Security, JWT, RBAC), real-time Angular / TypeScript frontend synchronized with biometric hardware, and comprehensive JUnit 5 / Mockito testing.",
     highlights: [
-      "Numérisation de passeport ICAO avec extraction optique automatique de la zone MRZ",
-      "Renseignement instantané des champs (Nom, Prénom, Nationalité, Dates, Numéro ICAO)",
-      "Intégration d'équipements biométriques pour la capture et validation d'empreintes digitales",
-      "Fiche complète de situation (profession, employeur en Tunisie, coordonnées et séjour)"
+      "Conception d'APIs REST Spring Boot sécurisées (JWT, Spring Security, RBAC) pour le contrôle d'accès multi-sites",
+      "Développement d'une application Angular / TypeScript (RxJS, Lazy Loading) réactive et ergonomique",
+      "Synchronisation temps réel avec plusieurs équipements biométriques (capture d'empreintes digitales)",
+      "Intégration de SDKs et APIs pour la numérisation de documents ICAO et la reconnaissance optique de la zone MRZ",
+      "Couverture de tests unitaires et d'intégration avec JUnit 5 et Mockito, déploiement Docker sur Linux"
     ],
     highlights_en: [
-      "High-definition ICAO passport scanning with automatic optical parsing of the MRZ zone",
-      "Instant field pre-filling (Full Name, Nationality, Birthdate, Passport Number, Expiry)",
-      "Biometric hardware integration for fingerprint capture and enrollment validation",
-      "Comprehensive case management (profession, employer in Tunisia, residency status)"
+      "Engineered secure Spring Boot REST APIs (JWT, Spring Security, RBAC) for multi-site access control and personnel management",
+      "Developed a responsive, modular Angular / TypeScript application (RxJS, Lazy Loading)",
+      "Real-time synchronization with biometric hardware devices (fingerprint capture and validation)",
+      "Integration of specialized SDKs and REST APIs for ICAO document scanning and automatic MRZ optical parsing",
+      "Rigorous unit and integration test coverage with JUnit 5 and Mockito, automated Docker CI/CD on Linux"
     ],
-    techStack: ["Spring Boot", "Angular", "SDK Biométrique", "Scanner ICAO & MRZ", "API REST", "Linux VPS", "CI/CD", "PostgreSQL"],
+    techStack: ["Java 17", "Spring Boot", "Angular", "TypeScript", "RxJS", "Spring Security", "JUnit 5", "Mockito", "Docker", "Linux"],
     metrics: {
       "Lecture MRZ": "Scan automatique instantané",
-      "Biométrie": "Empreintes digitales",
-      "Documents": "Passeport ICAO",
-      "Architecture": "Spring Boot / Angular"
+      "Biométrie": "Validation d'empreintes",
+      "Tests": "JUnit 5 & Mockito",
+      "Sécurité": "JWT & Spring Security"
     },
     metrics_en: {
       "MRZ Parsing": "Instant automatic scan",
       "Biometrics": "Fingerprint verification",
-      "Documents": "ICAO Passport standard",
-      "Architecture": "Spring Boot / Angular"
+      "Testing": "JUnit 5 & Mockito",
+      "Security": "JWT & Spring Security"
     },
     deepDive: {
-      challenge: "Développer une application étatique fiable pour automatiser l'enrôlement des ressortissants étrangers en Tunisie, supprimer les erreurs manuelles de transcription de passeport et interfacer des scanners physiques de haute précision et des capteurs biométriques.",
-      solution: "Conception d'une application web Angular communicant avec une couche backend Spring Boot et les SDKs des périphériques matériels. Le système effectue la numérisation haute définition du passeport, parse la ligne MRZ en direct, extrait la photo d'identité et associe les empreintes digitales pour une traçabilité totale.",
+      challenge: "Développer une application d'État hautement sécurisée pour l'enrôlement officiel des résidents, éliminer les risques d'erreur de saisie de passeport et interfacer en direct des scanners de documents ICAO et des capteurs biométriques.",
+      solution: "Architecture applicative robuste articulée autour d'un backend Spring Boot sécurisé par Spring Security et JWT, avec contrôle d'accès strict par rôles (RBAC). Le frontend Angular interagit avec les périphériques matériels via des passerelles SDK pour numériser en temps réel le document, parser la zone MRZ et certifier l'empreinte digitale.",
       results: [
-        "Enrôlement accéléré à moins de 30 secondes par dossier grâce à la lecture OCR MRZ",
-        "Fiabilisation absolue des données d'identité et conformité avec les exigences de sécurité",
-        "Déploiement continu et sécurisé sur serveur VPS Linux avec pipeline CI/CD automatisé"
+        "Enrôlement accéléré à moins de 30 secondes par dossier grâce à la lecture OCR MRZ instantanée",
+        "Fiabilisation absolue des données d'identité et traçabilité inviolable des accès",
+        "Couverture de tests automatisés JUnit 5 et Mockito assurant une maintenance sereine",
+        "Déploiements fiabilisés par pipeline CI/CD et conteneurisation Docker sur serveur VPS Linux"
       ]
     },
     deepDive_en: {
-      challenge: "Build a secure, mission-critical application to automate the enrollment of foreign nationals in Tunisia, eliminate manual passport transcription errors, and interface specialized hardware scanners and fingerprint sensors.",
-      solution: "Developed an Angular front-end communicating with a Spring Boot backend and hardware SDKs. The system scans passports in high resolution, parses MRZ strings in real time, extracts the photo, and attaches verified fingerprint biometric templates.",
+      challenge: "Develop a mission-critical, secure identity management system to streamline the enrollment of foreign residents, prevent manual passport transcription errors, and interface specialized biometric and ICAO scanners in real time.",
+      solution: "Engineered a hardened application stack featuring a Spring Boot backend secured with Spring Security, JWT, and RBAC access policies. The Angular frontend communicates with hardware SDKs to capture high-resolution passport scans, parse optical MRZ lines, and bind verified fingerprint biometrics.",
       results: [
         "Enrollment accelerated to under 30 seconds per record via automatic OCR MRZ reading",
-        "Guaranteed identity data accuracy and strict compliance with national security guidelines",
-        "Automated deployment on hardened Linux VPS servers with CI/CD pipelines"
+        "Guaranteed identity data precision and strict compliance with statutory security standards",
+        "Robust automated test suite using JUnit 5 and Mockito ensuring long-term code stability",
+        "Reliable continuous deployment pipeline with Docker containers on hardened Linux servers"
       ]
     }
   },
   {
-    id: "gestion-stock-aspnet",
-    title: "StockMaster Pro – Gestion de Stock & Inventaire ASP.NET Core",
-    title_en: "StockMaster Pro – ASP.NET Core (.NET 9) Inventory Management",
-    category: "fullstack",
-    categoryLabel: "ASP.NET Core & Full Stack",
-    categoryLabel_en: "ASP.NET Core & Full Stack",
-    contextBadge: "StockMaster Pro (.NET 9)",
-    contextBadge_en: "StockMaster Pro (.NET 9)",
-    year: "2025",
-    dateOrder: 202508,
-    role: "Développeuse Full Stack C# / .NET",
-    role_en: "Full Stack C# / .NET Developer",
-    icon: "📦",
-    image: "assets/gestion_stock_aspnet.png",
-    gallery: [
-      { label: "📊 Tableau de Bord & Inventaire", src: "assets/gestion_stock_aspnet.png" },
-      { label: "🔍 Filtres & Actions CRUD", src: "assets/gestion_stock_ui.png" }
-    ],
-    gradient: "linear-gradient(135deg, #2563eb, #38bdf8)",
-    shortDesc: "Application web d'administration et de gestion des stocks développée sous ASP.NET Core 9 (C#) et Entity Framework Core : suivi d'inventaire en temps réel, indicateurs KPIs (valeur globale, unités en stock, alertes de réapprovisionnement), recherche dynamique, catégorisation et opérations CRUD sécurisées avec SQLite/SQL Server.",
-    shortDesc_en: "Web administration and inventory control application built with ASP.NET Core 9 (C#) and Entity Framework Core: real-time stock tracking, live KPI indicators, dynamic search, multi-category filtering, and secure CRUD operations with SQLite/SQL Server.",
+    id: "ooredoo-traceability",
+    title: "Traçabilité des Flux Data & Ingestion Spring Batch",
+    title_en: "Data Pipeline Traceability & Spring Batch Ingestion",
+    category: "java",
+    categories: ["java", "angular"],
+    categoryLabel: "Java & Spring Boot",
+    categoryLabel_en: "Java & Spring Boot",
+    contextBadge: "Ooredoo Tunisie (2024)",
+    contextBadge_en: "Ooredoo Tunisia (2024)",
+    year: "2024",
+    dateOrder: 202409,
+    role: "Ingénieure Développeuse Full Stack (Stage PFE)",
+    role_en: "Full Stack Software Engineer Intern",
+    icon: "📊",
+    gradient: "linear-gradient(135deg, #e11d48, #fb7185)",
+    shortDesc: "Plateforme web de traçabilité des flux Data de bout en bout : traitements batch automatisés Spring Batch réduisant de 90 % les interventions manuelles, API REST Spring Data JPA, portail de supervision Angular avec Power BI et pipeline Jenkins avec SonarQube.",
+    shortDesc_en: "End-to-end data activity traceability platform: automated Spring Batch ETL jobs reducing manual intervention by 90%, Spring Data JPA REST APIs, Angular web portal with Power BI, and Jenkins CI pipeline with SonarQube.",
     highlights: [
-      "Tableau de bord KPIs en direct : calcul automatique des indicateurs clés (valorisation globale de l'inventaire, unités en stock et alertes)",
-      "Moteur de recherche instantané et filtrage multi-critères par catégories",
-      "Cycle CRUD complet (Créer, Consulter, Modifier, Supprimer) avec formulaires validés par DataAnnotations",
-      "Architecture MVC découplée sous .NET 9 avec persistance relationnelle via Entity Framework Core & SQLite"
+      "Traitements batch avec Spring Batch pour l'ingestion et la réconciliation automatisée de données volumineuses",
+      "Réduction spectaculaire de 90 % des interventions manuelles quotidiennes des équipes d'exploitation",
+      "APIs REST conçues avec Spring Boot et Spring Data JPA exposant les indicateurs clés aux équipes métier",
+      "Portail de supervision interactif Angular avec intégration de tableaux de bord Power BI en temps réel",
+      "Pipeline CI Jenkins intégrant des suites de tests automatisés, l'analyse SonarQube et des builds continus"
     ],
     highlights_en: [
-      "Live KPI dashboard: automated calculation of key inventory indicators (total valuation, units in stock, reorder alerts)",
-      "Instant search engine and multi-criteria filtering by product categories",
-      "Complete CRUD cycle (Create, Read, Update, Delete) with server and client DataAnnotations validation",
-      "Decoupled MVC architecture on .NET 9 with relational data persistence via Entity Framework Core & SQLite"
+      "Automated batch processing with Spring Batch for high-volume data ingestion and reconciliation",
+      "Spectacular 90% reduction in daily manual verification tasks for data engineering teams",
+      "REST APIs developed with Spring Boot and Spring Data JPA delivering audit metrics to business units",
+      "Interactive Angular supervision portal with real-time Power BI business intelligence dashboards",
+      "Jenkins CI pipeline incorporating automated test execution, SonarQube quality gates, and continuous builds"
     ],
-    techStack: ["C#", ".NET 9", "ASP.NET Core MVC", "Entity Framework Core", "SQLite", "Bootstrap 5", "HTML5/CSS3"],
+    techStack: ["Java 11", "Spring Boot", "Spring Batch", "Spring Data JPA", "Angular", "Power BI", "Jenkins", "SonarQube", "Linux"],
     metrics: {
-      "Framework": "ASP.NET Core (.NET 9)",
-      "ORM & Data": "EF Core & SQLite",
-      "Architecture": "MVC Pattern & Repos",
-      "UI & Style": "Bootstrap 5 Responsive"
+      "Automatisation": "-90% d'effort manuel",
+      "Traitement": "Spring Batch Quotidien",
+      "Qualité": "SonarQube & Tests CI",
+      "Supervision": "Angular & Power BI"
     },
     metrics_en: {
-      "Framework": "ASP.NET Core (.NET 9)",
-      "ORM & Data": "EF Core & SQLite",
-      "Architecture": "MVC Pattern & Repos",
-      "UI & Style": "Bootstrap 5 Responsive"
+      "Automation": "-90% manual effort",
+      "Processing": "Automated Spring Batch",
+      "Quality Gate": "SonarQube & CI Tests",
+      "Supervision": "Angular & Power BI"
     },
     deepDive: {
-      challenge: "Concevoir une application de gestion d'inventaire fluide, fiable et ergonomique pour les gestionnaires de stocks, permettant de suivre la valeur des immobilisations, d'alerter sur les ruptures et de faciliter les opérations d'ajustement sans complexité d'installation.",
-      solution: "Architecture robuste ASP.NET Core MVC sous .NET 9 avec injection de dépendance native, persistance relationnelle via Entity Framework Core avec migrations automatiques, interface Bootstrap 5 moderne aux contrastes soignés, et validation stricte des modèles côté serveur et côté client.",
+      challenge: "Les équipes data d'un opérateur télécom majeur devaient auditer et réconcilier manuellement des volumes massifs de fichiers de logs chaque jour, provoquant des retards d'analyse et des risques de non-détection d'anomalies.",
+      solution: "Architecture d'une chaîne automatisée à haute résilience avec Spring Batch pour parser, valider et ingérer les flux de données volumineux. Développement d'API REST sous Spring Boot et Spring Data JPA pour requêter l'historique d'audit, et conception d'un portail web Angular couplé à des visualisations Power BI.",
       results: [
-        "Génération automatique des indicateurs clés (valorisation globale du stock calculée dynamiquement, suivi en direct)",
-        "Traitement ultra-rapide des requêtes avec Entity Framework Core et base SQLite légère",
-        "Code source modulaire prêt pour une mise à l'échelle vers SQL Server ou PostgreSQL en production"
+        "Gain de productivité majeur : diminution de 90 % des interventions humaines sur l'ingestion",
+        "Traçabilité infaillible et alertes proactives immédiates en cas d'incohérence de données",
+        "Standardisation de la qualité du code grâce à la validation SonarQube intégrée à Jenkins",
+        "Visibilité managériale en temps réel via des tableaux de bord Power BI clairs et actionnables"
       ]
     },
     deepDive_en: {
-      challenge: "Design an intuitive, fast, and reliable inventory management application for stock managers to monitor asset valuation, alert on low stock, and handle adjustments without installation complexity.",
-      solution: "Engineered a robust ASP.NET Core MVC architecture on .NET 9 with native dependency injection, Entity Framework Core migrations, clean Bootstrap 5 UI, and strict validation.",
+      challenge: "Telecommunications data teams had to manually verify and reconcile large volumes of log files every day, resulting in reporting delays and elevated risk of undetected anomalies.",
+      solution: "Engineered a high-resilience automated pipeline using Spring Batch to parse, validate, and persist high-volume data streams. Developed Spring Boot and Spring Data JPA REST APIs for querying audit history, paired with an Angular portal and embedded Power BI dashboards.",
       results: [
-        "Automatic calculation of key indicators (real-time dynamic stock valuation, low-stock warnings)",
-        "Blazing-fast query performance with Entity Framework Core and lightweight SQLite storage",
-        "Modular codebase easily scalable to SQL Server or PostgreSQL in production"
-      ]
-    }
-  },
-  {
-    id: "sniper-phone-tn",
-    title: "Sniper Phone TN – E-Commerce High-Tech & Apple",
-    title_en: "Sniper Phone TN – High-Tech & Apple E-Commerce",
-    category: "fullstack",
-    categoryLabel: "Freelance • E-Commerce",
-    categoryLabel_en: "Freelance • E-Commerce",
-    contextBadge: "Freelance (2025)",
-    contextBadge_en: "Freelance (2025)",
-    year: "2025",
-    dateOrder: 202506,
-    role: "Développeuse Full Stack Freelance (Client : Sniper Phone TN)",
-    role_en: "Freelance Full Stack Developer (Client: Sniper Phone TN)",
-    icon: "📱",
-    image: "assets/ecommerce_hero.png",
-    gallery: [
-      { label: "🛍️ Boutique & Catalogue Apple", src: "assets/ecommerce_hero.png" },
-      { label: "🏷️ Logo Officiel Sniper Phone TN", src: "assets/sniper_phone_logo.jpg" }
-    ],
-    gradient: "linear-gradient(135deg, #0071e3, #38bdf8)",
-    shortDesc: "Plateforme e-commerce haut de gamme spécialisée dans les smartphones neufs et reconditionnés, écosystème Apple et accessoires high-tech (Mateur, Tunisie) : navigation multi-niveaux, panier dynamique en DT, espace client, mode admin et commande rapide.",
-    shortDesc_en: "Premium e-commerce platform specializing in new and refurbished smartphones, Apple ecosystem devices, and high-tech accessories (Mateur, Tunisia): multi-level catalog, dynamic cart in TND, client area, admin mode, and express checkout.",
-    highlights: [
-      "Frontend réactif et moderne développé avec React 19, Vite, Lucide React et Canvas Confetti",
-      "Catalogue dynamique multi-catégories (Apple iPhone/Mac, smartphones, tablettes, consoles) avec garanties 12 mois et 3 mois",
-      "Panier tiroir interactif (Slide-over Cart Drawer) avec calcul instantané en Dinars Tunisiens (DT) et gestion des stocks",
-      "Espace compte utilisateur sécurisé et mode Panneau d'Administration pour l'ajout et l'édition de produits en direct",
-      "Optimisation des performances : score Lighthouse 98+, expérience responsive mobile et conteneurisation Docker"
-    ],
-    highlights_en: [
-      "Modern, reactive frontend built with React 19, Vite, Lucide React, and Canvas Confetti",
-      "Multi-category product catalog (Apple iPhone/Mac, smartphones, tablets, consoles) with 12-month and 3-month warranties",
-      "Interactive slide-over cart drawer with instant total calculation in Tunisian Dinars (TND) and stock management",
-      "Secure user account area and Admin Dashboard mode for live product editing and creation",
-      "Performance optimized: 98+ Lighthouse score, responsive mobile experience, and Docker containerization"
-    ],
-    techStack: ["React 19", "Vite", "JavaScript ES6+", "Lucide React", "Canvas Confetti", "Docker", "CSS3 Apple Design"],
-    metrics: {
-      "Garantie & SAV": "12 Mois Neuf / 3 Mois Recond.",
-      "Devise": "Dinar Tunisien (DT)",
-      "Boutique": "Mateur, Tunisie",
-      "Performance": "Lighthouse 98+"
-    },
-    metrics_en: {
-      "Warranty": "12-Mo New / 3-Mo Refurb",
-      "Currency": "Tunisian Dinar (TND)",
-      "Store": "Mateur, Tunisia",
-      "Performance": "Lighthouse 98+"
-    },
-    deepDive: {
-      challenge: "Mission freelance réalisée de bout en bout pour la boutique high-tech Sniper Phone TN à Mateur : concevoir une plateforme de vente en ligne moderne, intuitive et ultra-rapide capable de rivaliser avec les standards de l'Apple Store, avec un panier fluide sans rechargement de page et un panneau d'administration autonome.",
-      solution: "Développement d'une application single-page modulaire en React 19 et Vite avec React Context API pour orchestrer le panier persistant, les favoris (Wishlist), l'authentification et les notifications Toast. Intégration d'un mode Administrateur permettant de gérer les fiches produits, prix et stocks en temps réel.",
-      results: [
-        "Interface responsive et luxueuse inspirée du design system Apple avec chargement instantané",
-        "Processus d'achat simplifié et transparent pour les clients tunisiens avec calcul en Dinars (DT)",
-        "Administration autonome sans connaissance technique pour le gérant de la boutique"
-      ]
-    },
-    deepDive_en: {
-      challenge: "End-to-end freelance project for Sniper Phone TN in Mateur: create a modern, Apple Store-inspired online shopping experience with an instant cart drawer and an autonomous admin dashboard.",
-      solution: "Built a modular single-page application using React 19, Vite, and Context API for persistent cart state, wishlist, authentication, and toast alerts. Added an intuitive Admin mode for instant inventory management.",
-      results: [
-        "Luxurious, responsive Apple-inspired design system with sub-second page loads",
-        "Seamless purchase flow for Tunisian shoppers with transparent local currency pricing",
-        "Effortless product catalog management for the store owner with no technical background needed"
+        "Massive productivity gain: 90% decrease in manual verification tasks",
+        "Rock-solid end-to-end traceability with proactive anomaly alerts",
+        "Enforced code quality and test discipline through automated SonarQube gates in Jenkins CI",
+        "Executive real-time visibility through rich, interactive Power BI operational dashboards"
       ]
     }
   },
   {
     id: "campconnect-tn",
-    title: "CampConnect – Organisation de Campings & Réservation de Tentes",
+    title: "CampConnect – Réservation & Organisation Outdoor",
     title_en: "CampConnect – Outdoor Camping & Tent Reservation Platform",
-    category: "fullstack",
-    categoryLabel: "Full Stack & Plein Air",
-    categoryLabel_en: "Full Stack & Outdoors",
+    category: "angular",
+    categories: ["angular", "java"],
+    categoryLabel: "Angular & Frontend",
+    categoryLabel_en: "Angular & Frontend",
     contextBadge: "Plateforme Collaborative (2024)",
     contextBadge_en: "Community Platform (2024)",
     year: "2024",
     dateOrder: 202410,
-    role: "Ingénieure Full Stack / Web Developer",
+    role: "Ingénieure Full Stack Java / Angular",
     role_en: "Full Stack Software Engineer",
     icon: "⛺",
     image: "assets/camping_platform_banner.png",
@@ -798,171 +742,178 @@ const PROJECTS_DATA = [
       { label: "🏕️ Plateforme & Réservation", src: "assets/camping_platform_banner.png" }
     ],
     gradient: "linear-gradient(135deg, #059669, #10b981)",
-    shortDesc: "Plateforme web collaborative dédiée aux passionnés de randonnée et de plein air : réservation en ligne de tentes et équipements outdoor, planification d'événements de camping (bivouacs, randos), forum de discussion communautaire en temps réel et partage de spots naturels.",
-    shortDesc_en: "Collaborative web platform for hiking and outdoor enthusiasts: online tent and camping gear rentals, group camp event planning (bivouacs, treks), real-time community chat, and natural spot guide.",
+    shortDesc: "Plateforme web collaborative dédiée aux passionnés de randonnée et de plein air : réservation en ligne de tentes et équipements outdoor, planification d'événements de camping, salon de discussion en temps réel via WebSocket et partage de spots naturels.",
+    shortDesc_en: "Collaborative web platform for outdoor and hiking enthusiasts: online tent and gear rentals, group camp event planning, real-time live chat via WebSocket, and natural campsite guide.",
     highlights: [
-      "Module de réservation de tentes et matériel de bivouac avec calendrier de disponibilités en temps réel",
-      "Organisation et création d'événements de camping : localisation, date, difficulté, nombre de participants et météo",
-      "Espace de discussion & messagerie interactive (WebSocket) pour la coordination, le covoiturage et les conseils matériel",
-      "Système d'évaluation, avis certifiés et fiches détaillées des spots de camping et bivouac"
+      "Système de réservation en ligne de tentes et matériels outdoor avec calendrier dynamique des disponibilités",
+      "Organisation d'événements de camping : localisation, dates, niveau de difficulté et gestion des inscriptions",
+      "Messagerie interactive temps réel basée sur WebSocket pour la coordination, le covoiturage et les échanges",
+      "Architecture Spring Boot & Angular avec sécurité par token JWT et base relationnelle PostgreSQL"
     ],
     highlights_en: [
-      "Online booking module for tents and bivouac equipment with real-time availability calendar",
-      "Camping event planning: location coordinates, dates, difficulty, participant quotas, and weather forecasts",
-      "Real-time interactive group chat (WebSocket) for trip logistics, carpooling, and gear advice",
-      "Spot directory with verified community reviews and safety recommendations across natural sites"
+      "Online rental booking system for tents and outdoor gear with real-time dynamic availability calendar",
+      "Camping trip management: geographical locations, dates, trek difficulty ratings, and participant rosters",
+      "Real-time WebSocket chat room for instant trip coordination, carpooling, and gear recommendations",
+      "Spring Boot & Angular full-stack architecture with secure JWT token authentication and PostgreSQL storage"
     ],
-    techStack: ["Spring Boot", "Angular", "Java", "TypeScript", "WebSocket", "API REST", "PostgreSQL", "Bootstrap"],
+    techStack: ["Java", "Spring Boot", "Angular", "TypeScript", "WebSocket", "API REST", "PostgreSQL", "Bootstrap"],
     metrics: {
       "Réservations": "Tentes & Matériel 24/7",
-      "Communauté": "Messagerie & Forum direct",
-      "Événements": "Campings & Randonnées",
+      "Temps Réel": "WebSocket Live Chat",
+      "Événements": "Campings & Treks",
       "Architecture": "Spring Boot & Angular"
     },
     metrics_en: {
-      "Rentals": "Tents & Gear 24/7",
-      "Community": "Real-time Live Chat",
-      "Events": "Group Camps & Treks",
+      "Bookings": "Tents & Gear 24/7",
+      "Real-Time": "WebSocket Live Chat",
+      "Events": "Campings & Treks",
       "Architecture": "Spring Boot & Angular"
     },
     deepDive: {
-      challenge: "Les amateurs de camping et de bivouac en pleine nature peinent souvent à louer du matériel de qualité, à trouver des partenaires de camp fiables et à échanger des informations sécurisées sur l'état des sites naturels.",
-      solution: "Conception d'une plateforme web complète combinant un système e-commerce de réservation locative de matériel (tentes 2/4 places, sacs de couchage, réchauds), un gestionnaire d'événements de groupe et un salon de discussion interactif temps réel via WebSockets pour planifier les départs et covoiturages.",
+      challenge: "Faciliter l'organisation de bivouacs et randonnées en offrant aux passionnés de plein air un guichet unique pour louer des équipements de camping et coordonner leurs sorties de manière conviviale.",
+      solution: "Développement d'une application web intégrant un module de réservation de tentes avec gestion de stock en temps réel, un planificateur d'itinéraires et un salon de discussion instantané WebSocket propulsé par Spring Boot et Angular.",
       results: [
-        "Expérience utilisateur fluide de la réservation de tente jusqu'au point de rendez-vous du camp",
-        "Canal de discussion actif permettant une logistique sans friction entre campeurs",
-        "Architecture sécurisée avec authentification JWT et gestion des rôles (campeur, organisateur, loueur)"
+        "Réservation intuitive de matériel outdoor avec calcul immédiat des disponibilités et tarifs",
+        "Coordination efficace et fluide des groupes de campeurs grâce au chat en direct",
+        "Architecture robuste assurant une gestion sécurisée des profils et réservations"
       ]
     },
     deepDive_en: {
-      challenge: "Outdoor enthusiasts often struggle to find reliable camping equipment for rent, connect with trustworthy fellow campers, and obtain up-to-date safety conditions on remote campsites.",
-      solution: "Engineered a collaborative platform integrating an e-commerce gear rental engine (2/4-person tents, sleeping bags, stoves), a group event organizer, and a WebSocket-powered live chat for departure coordination.",
+      challenge: "Simplify outdoor trip logistics by providing outdoor enthusiasts with a single platform to rent camping gear and coordinate excursions seamlessly.",
+      solution: "Engineered a collaborative platform integrating a tent rental engine with real-time inventory tracking, an expedition organizer, and a WebSocket live chat backed by Spring Boot and Angular.",
       results: [
-        "Seamless user journey from gear reservation to the campsite rendezvous",
-        "Active community channels enabling frictionless carpooling and logistics among campers",
-        "Robust security architecture with JWT authentication and role-based access control"
+        "Intuitive gear booking experience with instant pricing and availability verification",
+        "Effortless group coordination and carpooling via real-time WebSocket communication",
+        "Reliable architecture guaranteeing secure profile management and booking integrity"
       ]
     }
   },
   {
-    id: "ooredoo-traceability",
-    title: "Traçabilité des Flux Data & Analytics BI",
-    title_en: "Data Activity Traceability & BI Analytics",
-    category: "fullstack",
-    categoryLabel: "Full Stack & Data",
-    categoryLabel_en: "Full Stack & Data",
-    contextBadge: "Ooredoo Tunisie (2024)",
-    contextBadge_en: "Ooredoo Tunisia (2024)",
-    year: "2024",
-    dateOrder: 202407,
-    role: "Stagiaire Développeur Full Stack",
-    role_en: "Full Stack Developer Intern",
-    icon: "📊",
-    gradient: "linear-gradient(135deg, #f43f5e, #fb7185)",
-    shortDesc: "Plateforme web de traçabilité complète des activités Data avec automatisation des flux par Spring Batch et tableaux de bord décisionnels Power BI.",
-    shortDesc_en: "Comprehensive web platform for end-to-end Data activity auditing, with automated ingestion via Spring Batch and executive Power BI dashboards.",
+    id: "gestion-stock-aspnet",
+    title: "StockMaster Pro – Administration & Gestion d'Inventaire",
+    title_en: "StockMaster Pro – Enterprise Inventory Management System",
+    category: "cloud",
+    categories: ["cloud"],
+    categoryLabel: "Cloud & Microservices",
+    categoryLabel_en: "Cloud & Microservices",
+    contextBadge: "StockMaster Pro (2025)",
+    contextBadge_en: "StockMaster Pro (2025)",
+    year: "2025",
+    dateOrder: 202508,
+    role: "Ingénieure Logiciel Full Stack",
+    role_en: "Full Stack Software Engineer",
+    icon: "📦",
+    image: "assets/gestion_stock_aspnet.png",
+    gallery: [
+      { label: "📊 Tableau de Bord & Inventaire", src: "assets/gestion_stock_aspnet.png" },
+      { label: "🔍 Filtres & Actions CRUD", src: "assets/gestion_stock_ui.png" }
+    ],
+    gradient: "linear-gradient(135deg, #2563eb, #38bdf8)",
+    shortDesc: "Application web d'administration et de gestion des stocks : suivi d'inventaire en temps réel, indicateurs KPIs en direct (valeur globale, unités en stock, alertes de réapprovisionnement), recherche dynamique, catégorisation et opérations CRUD sécurisées.",
+    shortDesc_en: "Web administration and inventory control system: real-time stock tracking, live KPI indicators, dynamic search, multi-category filtering, and secure full-cycle CRUD operations.",
     highlights: [
-      "Automatisation d'ingestion quotidienne de gros volumes de fichiers avec Spring Batch",
-      "Réduction spectaculaire de 90 % des interventions manuelles quotidiennes",
-      "Intégration d'un tableau de bord dynamique Power BI pour le suivi et l'analyse",
-      "Pipeline CI/CD Jenkins pour des déploiements fiables et automatisés"
+      "Tableau de bord KPIs en direct : calcul automatique des indicateurs clés (valorisation d'inventaire, unités en stock, alertes)",
+      "Moteur de recherche instantané et filtrage multi-critères par catégories de produits",
+      "Cycle CRUD complet (Créer, Consulter, Modifier, Supprimer) avec formulaires validés et contrôles stricts",
+      "Architecture MVC modulaire avec persistance relationnelle optimisée et conteneurisation Docker"
     ],
     highlights_en: [
-      "Automated daily ingestion of high-volume data files with Spring Batch",
-      "90% reduction in daily manual verification tasks for data engineering teams",
-      "Interactive Power BI dashboard integration for operational tracking and analytics",
-      "Automated Jenkins CI/CD pipelines ensuring reliable continuous builds and tests"
+      "Live KPI dashboard: automated calculation of critical indicators (total inventory valuation, stock counts, reorder warnings)",
+      "Instant search engine and multi-criteria category filtering for fast item lookup",
+      "Complete CRUD cycle (Create, Read, Update, Delete) with validated models and strict data integrity",
+      "Modular MVC architecture with optimized relational persistence and Docker containerization"
     ],
-    techStack: ["Spring Boot", "Angular", "Spring Batch", "Power BI", "Jenkins CI/CD", "SQL", "Git"],
+    techStack: ["Architecture MVC", "Entity Data Models", "APIs REST", "Relational Database", "Bootstrap 5", "HTML5/CSS3", "Docker"],
     metrics: {
-      "Automatisation": "-90% d'effort manuel",
-      "Performance": "Batch Quotidien Auto",
-      "Reporting": "Power BI Interactif",
-      "Déploiement": "CI/CD Jenkins"
+      "Dashboard": "KPIs & Valeur en Direct",
+      "Cycle CRUD": "Complet & Validé",
+      "Recherche": "Instantanée Multi-critères",
+      "Déploiement": "Conteneurisé Docker"
     },
     metrics_en: {
-      "Automation": "-90% manual effort",
-      "Performance": "Automated Daily Batch",
-      "Reporting": "Interactive Power BI",
-      "Deployment": "Jenkins CI/CD"
+      "Dashboard": "Live KPIs & Stock Value",
+      "CRUD Lifecycle": "Full & Validated",
+      "Search": "Instant Multi-Criteria",
+      "Deployment": "Docker Containerized"
     },
     deepDive: {
-      challenge: "Les équipes data devaient auditer et vérifier manuellement des centaines de flux de données chaque jour, entraînant des retards d'analyse et un risque accru d'erreur humaine.",
-      solution: "Mise en place d'une chaîne automatisée avec Spring Batch pour parser, valider et stocker les données en continu, couplée à un portail web Angular réactif et des visualisations Power BI pour les managers opérationnels.",
+      challenge: "Offrir aux gestionnaires d'inventaire un outil rapide, fiable et visuel pour suivre la valeur des immobilisations, détecter les ruptures de stocks et effectuer les opérations quotidiennes sans friction.",
+      solution: "Conception d'une application MVC structurée avec modèles de données stricts, injection de dépendances, interface Bootstrap 5 aux contrastes soignés et calculs de métriques automatisés côté serveur.",
       results: [
-        "Gain de temps massif : les interventions manuelles ont chuté de 90%",
-        "Traçabilité infaillible et alertes automatiques en cas d'incohérence",
-        "Automatisation du cycle de build et test grâce à Jenkins"
+        "Supervision claire de la valorisation globale du stock et des alertes de réapprovisionnement",
+        "Opérations CRUD ultra-rapides avec validation en temps réel des formulaires",
+        "Application conteneurisée prête pour un déploiement continu en environnement cloud"
       ]
     },
     deepDive_en: {
-      challenge: "Data teams had to manually verify hundreds of incoming data files every day, resulting in reporting delays and elevated risk of human error.",
-      solution: "Architected an automated ingestion pipeline with Spring Batch to parse, validate, and persist data continuously, coupled with an Angular web portal and executive Power BI visual dashboards.",
+      challenge: "Deliver an intuitive, fast, and visual inventory management system for stock administrators to track asset valuation, anticipate low-stock alerts, and perform daily updates effortlessly.",
+      solution: "Built a structured MVC application with strict data models, dependency injection, responsive Bootstrap 5 interface, and automated server-side KPI recalculation.",
       results: [
-        "Massive time savings: manual interventions plummeted by 90%",
-        "Rock-solid traceability with automatic anomaly alerts",
-        "Automated build and test lifecycle powered by Jenkins"
+        "Immediate oversight into global inventory valuation and automated replenishment alerts",
+        "High-performance CRUD lifecycle with instant form validation",
+        "Containerized application ready for continuous cloud deployment"
       ]
     }
   },
   {
-    id: "devops-cicd-pipeline",
-    title: "Pipeline DevOps Industriel & Monitoring Cloud",
-    title_en: "Enterprise DevOps Pipeline & Cloud Monitoring",
-    category: "devops",
-    categoryLabel: "DevOps & Cloud",
-    categoryLabel_en: "DevOps & Cloud",
-    contextBadge: "Infrastructure & CI/CD (2024)",
-    contextBadge_en: "Infrastructure & CI/CD (2024)",
-    year: "2024",
-    dateOrder: 202401,
-    role: "DevOps Engineer",
-    role_en: "DevOps Engineer",
-    icon: "⚙️",
-    gradient: "linear-gradient(135deg, #3b82f6, #60a5fa)",
-    shortDesc: "Automatisation de bout en bout du cycle de vie logiciel : intégration et déploiement continus, orchestration de conteneurs et métriques de monitoring.",
-    shortDesc_en: "End-to-end software lifecycle automation: continuous integration and continuous deployment, container orchestration, and proactive cloud monitoring.",
+    id: "odoo-erp-suite",
+    title: "Intégration Odoo 17 & Synchronisation REST",
+    title_en: "Odoo 17 Enterprise Integration & REST Synchronization",
+    category: "saas",
+    categories: ["saas", "java"],
+    categoryLabel: "SaaS & Télémétrie",
+    categoryLabel_en: "SaaS & Telemetry",
+    contextBadge: "Virtual Mobile Data Solutions (2026)",
+    contextBadge_en: "Virtual Mobile Data Solutions (2026)",
+    year: "2026",
+    dateOrder: 202601,
+    role: "Ingénieure Développeuse Full Stack",
+    role_en: "Full Stack Software Engineer",
+    icon: "💼",
+    gradient: "linear-gradient(135deg, #8b5cf6, #c084fc)",
+    shortDesc: "Développement de modules métier sous Odoo 17 et interconnexion bidirectionnelle via API REST avec les plateformes de télémétrie pour synchroniser les actifs, abonnements et facturation.",
+    shortDesc_en: "Custom business module development on Odoo 17 with bidirectional REST API synchronization for telemetry assets, subscriptions, and automated invoicing.",
     highlights: [
-      "Pipelines CI/CD sous Jenkins et GitLab CI avec étapes de lint, test et build",
-      "Conteneurisation multi-stage Docker et orchestration sur cluster Kubernetes",
-      "Provisioning d'infrastructure via Terraform et gestion de configuration avec Ansible",
-      "Surveillance de métriques et alertes proactives avec Prometheus et Grafana"
+      "Conception et personnalisation de modules métier Odoo 17 pour la gestion d'actifs et d'abonnements",
+      "Synchronisation bidirectionnelle via API REST avec les plateformes de télémétrie pour éliminer les ressaisies",
+      "Génération automatisée de factures, rapports comptables et bilans d'activité",
+      "Déploiement conteneurisé Docker et administration d'environnements Linux"
     ],
     highlights_en: [
-      "Automated CI/CD pipelines with Jenkins and GitLab CI including lint, test, and build phases",
-      "Multi-stage Docker containerization and Kubernetes cluster orchestration",
-      "Infrastructure provisioning with Terraform and configuration management with Ansible",
-      "Proactive metrics monitoring and alert rules with Prometheus and Grafana"
+      "Custom Odoo 17 business module development for asset inventory and recurring subscriptions",
+      "Bidirectional REST API synchronization with telemetry platforms eliminating manual re-entries",
+      "Automated generation of customer invoices, accounting reports, and activity logs",
+      "Dockerized container deployments and Linux system administration"
     ],
-    techStack: ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "Terraform", "Ansible", "Prometheus", "Grafana"],
+    techStack: ["Odoo 17", "Python", "API REST", "PostgreSQL", "Docker", "Linux"],
     metrics: {
-      "Cycle de Build": "100% Automatisé",
-      "Orchestration": "Kubernetes K8s",
-      "Supervision": "Prometheus & Grafana",
-      "IaC": "Terraform / Ansible"
+      "ERP": "Odoo 17 Enterprise",
+      "Synchro": "API REST Bidirectionnelle",
+      "Modules": "Sur-mesure",
+      "Infra": "Docker & Linux"
     },
     metrics_en: {
-      "Build Cycle": "100% Automated",
-      "Orchestration": "Kubernetes K8s",
-      "Supervision": "Prometheus & Grafana",
-      "IaC": "Terraform / Ansible"
+      "ERP": "Odoo 17 Enterprise",
+      "Sync": "Bidirectional REST API",
+      "Modules": "Custom Tailored",
+      "Infra": "Docker & Linux"
     },
     deepDive: {
-      challenge: "Éliminer les déploiements manuels à risque, réduire le temps de mise en production (Time-to-Market) et surveiller la santé des microservices en production.",
-      solution: "Mise en place d'une chaîne CI/CD complète déclenchée à chaque push Git, avec tests automatisés, scan de vulnérabilités, publication des conteneurs et déploiement continu sur Kubernetes avec alertes Grafana.",
+      challenge: "Supprimer les doubles saisies et les incohérences de données entre la plateforme télématique et le progiciel de facturation de l'entreprise.",
+      solution: "Développement d'un module d'intégration sous Odoo 17 communiquant par API REST pour synchroniser automatiquement les identifiants IMEI, les états d'abonnements et déclencher les facturations périodiques.",
       results: [
-        "Zéro interruption de service (Zero-downtime rolling updates)",
-        "Visibilité totale sur la consommation mémoire et CPU des services",
-        "Fiabilité renforcée et standardisation de tous les environnements (Dev, Staging, Prod)"
+        "Suppression totale des ressaisies manuelles et fiabilisation des données comptables",
+        "Génération instantanée des rapports mensuels pour les clients abonnés",
+        "Architecture robuste sous Docker facilitant les mises à jour et la maintenance"
       ]
     },
     deepDive_en: {
-      challenge: "Eliminate error-prone manual deployments, shorten time-to-market, and gain full operational visibility over microservice health in production.",
-      solution: "Engineered an end-to-end CI/CD pipeline triggered on git push, featuring automated test suites, vulnerability scans, container image registry publishing, and zero-downtime Kubernetes deployments monitored by Grafana.",
+      challenge: "Eliminate double data entry and data mismatches between the telemetry platform and corporate billing software.",
+      solution: "Engineered a custom integration module in Odoo 17 interfacing via bidirectional REST endpoints to automatically sync GPS IMEI identifiers, subscription tiers, and periodic invoices.",
       results: [
-        "Zero-downtime rolling updates in production",
-        "Real-time visibility into CPU, memory, and network latency across all services",
-        "Standardized, reproducible environments across Dev, Staging, and Production"
+        "Complete elimination of manual data re-entries and enhanced billing reliability",
+        "Instant one-click monthly reporting for subscribers",
+        "Robust Dockerized architecture easing maintenance and future upgrades"
       ]
     }
   }
@@ -1109,7 +1060,7 @@ function renderProjects(filterCategory) {
 
   const filteredProjects = currentFilter === 'all' 
     ? sortedProjects 
-    : sortedProjects.filter(p => p.category === currentFilter);
+    : sortedProjects.filter(p => p.category === currentFilter || (Array.isArray(p.categories) && p.categories.includes(currentFilter)));
 
   container.innerHTML = filteredProjects.map(project => {
     const pTitle = (isEn && project.title_en) ? project.title_en : project.title;

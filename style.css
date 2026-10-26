@@ -1316,6 +1316,35 @@ img {
   font-weight: bold;
 }
 
+.timeline-env {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--border-subtle);
+  font-size: 0.85rem;
+}
+
+.timeline-env-label {
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+}
+
+.timeline-env-tags {
+  color: var(--text-primary);
+  font-family: var(--font-code);
+  font-size: 0.82rem;
+  background: rgba(148, 163, 184, 0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
 /* --- SKILLS MATRIX SECTION --- */
 .skills-grid {
   display: grid;
