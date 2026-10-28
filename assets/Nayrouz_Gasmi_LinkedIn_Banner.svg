@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <!-- Background Gradient Matching Example (Slate Blue Tech) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3b4d"/>
+      <stop offset="45%" stop-color="#3c4e64"/>
+      <stop offset="100%" stop-color="#222f3e"/>
+    </linearGradient>
+
+    <!-- Radial Cyan Glow -->
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="1584" height="396" fill="url(#bgGrad)"/>
+  <rect x="300" y="0" width="1000" height="396" fill="url(#glowGrad)"/>
+
+  <!-- 2. Subtle Tech Grid Pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="44" x2="1584" y2="44"/>
+    <line x1="0" y1="88" x2="1584" y2="88"/>
+    <line x1="0" y1="132" x2="1584" y2="132"/>
+    <line x1="0" y1="176" x2="1584" y2="176"/>
+    <line x1="0" y1="220" x2="1584" y2="220"/>
+    <line x1="0" y1="264" x2="1584" y2="264"/>
+    <line x1="0" y1="308" x2="1584" y2="308"/>
+    <line x1="0" y1="352" x2="1584" y2="352"/>
+    
+    <line x1="176" y1="0" x2="176" y2="396"/>
+    <line x1="352" y1="0" x2="352" y2="396"/>
+    <line x1="528" y1="0" x2="528" y2="396"/>
+    <line x1="704" y1="0" x2="704" y2="396"/>
+    <line x1="880" y1="0" x2="880" y2="396"/>
+    <line x1="1056" y1="0" x2="1056" y2="396"/>
+    <line x1="1232" y1="0" x2="1232" y2="396"/>
+    <line x1="1408" y1="0" x2="1408" y2="396"/>
+  </g>
+
+  <!-- 3. Left Geometric Mesh / Geodesic Wireframe Polyhedron -->
+  <g transform="translate(180, 180)" stroke="#93c5fd" stroke-opacity="0.32" stroke-width="1.3" fill="none">
+    <polygon points="0,-140 120,-70 120,70 0,140 -120,70 -120,-70"/>
+    <polygon points="0,-75 65,-37 65,37 0,75 -65,37 -65,-37"/>
+    <line x1="0" y1="-140" x2="0" y2="-75"/>
+    <line x1="120" y1="-70" x2="65" y2="-37"/>
+    <line x1="120" y1="70" x2="65" y2="37"/>
+    <line x1="0" y1="140" x2="0" y2="75"/>
+    <line x1="-120" y1="70" x2="-65" y2="37"/>
+    <line x1="-120" y1="-70" x2="-65" y2="-37"/>
+    <line x1="0" y1="-75" x2="0" y2="75"/>
+    <line x1="-65" y1="-37" x2="65" y2="37"/>
+    <line x1="65" y1="-37" x2="-65" y2="37"/>
+    <!-- Glowing Node Dots -->
+    <circle cx="0" cy="-140" r="3" fill="#93c5fd"/>
+    <circle cx="120" cy="-70" r="3" fill="#93c5fd"/>
+    <circle cx="120" cy="70" r="3" fill="#93c5fd"/>
+    <circle cx="0" cy="140" r="3" fill="#93c5fd"/>
+    <circle cx="-120" cy="70" r="3" fill="#93c5fd"/>
+    <circle cx="-120" cy="-70" r="3" fill="#93c5fd"/>
+    <circle cx="0" cy="-75" r="2.5" fill="#93c5fd"/>
+    <circle cx="65" cy="-37" r="2.5" fill="#93c5fd"/>
+    <circle cx="65" cy="37" r="2.5" fill="#93c5fd"/>
+    <circle cx="0" cy="75" r="2.5" fill="#93c5fd"/>
+    <circle cx="-65" cy="37" r="2.5" fill="#93c5fd"/>
+    <circle cx="-65" cy="-37" r="2.5" fill="#93c5fd"/>
+  </g>
+
+  <!-- 4. Right Tech Geometric Wireframe -->
+  <g transform="translate(1420, 200)" stroke="#7dd3fc" stroke-opacity="0.28" stroke-width="1.3" fill="none">
+    <circle cx="0" cy="0" r="110" stroke-dasharray="6 6"/>
+    <polygon points="0,-120 100,-60 100,60 0,120 -100,60 -100,-60"/>
+    <line x1="0" y1="-120" x2="0" y2="120"/>
+    <line x1="-100" y1="-60" x2="100" y2="60"/>
+    <line x1="100" y1="-60" x2="-100" y2="60"/>
+    <circle cx="0" cy="0" r="5" fill="#38bdf8"/>
+    <circle cx="0" cy="-120" r="3" fill="#7dd3fc"/>
+    <circle cx="100" cy="-60" r="3" fill="#7dd3fc"/>
+    <circle cx="100" cy="60" r="3" fill="#7dd3fc"/>
+    <circle cx="0" cy="120" r="3" fill="#7dd3fc"/>
+    <circle cx="-100" cy="60" r="3" fill="#7dd3fc"/>
+    <circle cx="-100" cy="-60" r="3" fill="#7dd3fc"/>
+  </g>
+
+  <!-- 5. Right Cyber Hand Silhouette Network -->
+  <g transform="translate(1180, 140) scale(1.2)" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.2" fill="none">
+    <line x1="0" y1="50" x2="40" y2="30"/>
+    <line x1="40" y1="30" x2="90" y2="20"/>
+    <line x1="90" y1="20" x2="140" y2="15"/>
+    <line x1="140" y1="15" x2="190" y2="10"/>
+    <line x1="40" y1="30" x2="50" y2="60"/>
+    <line x1="90" y1="20" x2="100" y2="50"/>
+    <line x1="140" y1="15" x2="150" y2="45"/>
+    <line x1="50" y1="60" x2="100" y2="50"/>
+    <line x1="100" y1="50" x2="150" y2="45"/>
+    <line x1="50" y1="60" x2="45" y2="90"/>
+    <line x1="100" y1="50" x2="95" y2="80"/>
+    <line x1="150" y1="45" x2="145" y2="75"/>
+    <line x1="45" y1="90" x2="95" y2="80"/>
+    <line x1="95" y1="80" x2="145" y2="75"/>
+    <circle cx="40" cy="30" r="2.5" fill="#38bdf8" fill-opacity="0.4"/>
+    <circle cx="90" cy="20" r="2.5" fill="#38bdf8" fill-opacity="0.4"/>
+    <circle cx="140" cy="15" r="2.5" fill="#38bdf8" fill-opacity="0.4"/>
+    <circle cx="100" cy="50" r="2.5" fill="#38bdf8" fill-opacity="0.4"/>
+  </g>
+
+  <!-- 6. Main Text Content (Centered with offset to balance avatar on bottom-left) -->
+  <g transform="translate(820, 0)" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', Roboto, sans-serif">
+    
+    <!-- Full Name -->
+    <text x="0" y="125" font-size="62" font-weight="800" fill="#ffffff" letter-spacing="-0.5" filter="url(#dropShadow)">
+      Nayrouz Gasmi
+    </text>
+
+    <!-- Role / Subtitle -->
+    <text x="0" y="178" font-size="20" font-weight="700" fill="#93c5fd" letter-spacing="8" text-transform="uppercase">
+      S O F T W A R E   E N G I N E E R
+    </text>
+
+    <!-- Tech Stack Pill -->
+    <g transform="translate(0, 212)">
+      <rect x="-260" y="0" width="520" height="34" rx="17" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1"/>
+      <text x="0" y="23" font-size="14.5" font-weight="600" fill="#e2e8f0" letter-spacing="0.5">
+        Full Stack Java 17 • Spring Boot • Angular • Microservices
+      </text>
+    </g>
+
+    <!-- Contact Info Bar -->
+    <g transform="translate(0, 298)">
+      <!-- Phone Pill -->
+      <g transform="translate(-270, 0)">
+        <circle cx="0" cy="0" r="14" fill="#38bdf8"/>
+        <!-- Phone SVG Icon -->
+        <path d="M-5 -4 C-6 -2 -6 2 -2 6 C2 10 6 10 8 9 C9 8 8 7 7 6 C6 5 5 6 4 6 C3 6 1 4 1 3 C1 2 2 1 1 0 C0 -1 -1 -2 -2 -3 C-3 -4 -4 -4 -5 -4 Z" fill="#0f172a" transform="scale(0.8) translate(-1, -1)"/>
+        <text x="24" y="5" font-size="15" font-weight="500" fill="#cbd5e1" text-anchor="start">
+          +216 29 845 823
+        </text>
+      </g>
+
+      <!-- Email Pill -->
+      <g transform="translate(-30, 0)">
+        <circle cx="0" cy="0" r="14" fill="#38bdf8"/>
+        <!-- Mail SVG Icon -->
+        <rect x="-6" y="-4" width="12" height="9" rx="1" fill="#0f172a"/>
+        <polyline points="-6,-3 0,2 6,-3" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+        <text x="24" y="5" font-size="15" font-weight="500" fill="#cbd5e1" text-anchor="start">
+          nayrouzgasmi@gmail.com
+        </text>
+      </g>
+
+      <!-- Portfolio Pill -->
+      <g transform="translate(260, 0)">
+        <circle cx="0" cy="0" r="14" fill="#38bdf8"/>
+        <!-- Globe SVG Icon -->
+        <circle cx="0" cy="0" r="6" stroke="#0f172a" stroke-width="1.4" fill="none"/>
+        <ellipse cx="0" cy="0" rx="3" ry="6" stroke="#0f172a" stroke-width="1.2" fill="none"/>
+        <line x1="-6" y1="0" x2="6" y2="0" stroke="#0f172a" stroke-width="1.2"/>
+        <text x="24" y="5" font-size="15" font-weight="500" fill="#cbd5e1" text-anchor="start">
+          nayrouz-d.github.io/portfolio
+        </text>
+      </g>
+    </g>
+
+  </g>
+</svg>

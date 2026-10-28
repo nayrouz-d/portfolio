@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générateur de Bannière LinkedIn | Nayrouz Gasmi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background: #0b0f19;
+      color: #e2e8f0;
+      padding: 2rem 1.5rem 4rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app-header {
+      text-align: center;
+      max-width: 800px;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #38bdf8;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.5px;
+    }
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Container de prévisualisation */
+    .preview-card {
+      width: 100%;
+      max-width: 1200px;
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      margin-bottom: 2rem;
+    }
+
+    .canvas-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1584 / 396;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      background: #1e293b;
+    }
+
+    #bannerCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Simulation de l'avatar LinkedIn */
+    .avatar-preview-guide {
+      position: absolute;
+      bottom: -35px;
+      left: 45px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #111827;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      overflow: hidden;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      background: #1e293b;
+      z-index: 20;
+    }
+    .avatar-preview-guide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .avatar-preview-label {
+      position: absolute;
+      bottom: -60px;
+      left: 35px;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      pointer-events: none;
+    }
+
+    /* Contrôles et options */
+    .controls-grid {
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .control-box {
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .control-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 0.85rem;
+    }
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 0.35rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="text"]:focus {
+      border-color: #38bdf8;
+    }
+
+    /* Sélecteur de styles */
+    .style-presets {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+    }
+    .preset-btn {
+      padding: 0.75rem 1rem;
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s;
+    }
+    .preset-btn:hover {
+      border-color: #38bdf8;
+      color: #ffffff;
+    }
+    .preset-btn.active {
+      background: rgba(14, 165, 233, 0.15);
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+    .preset-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+
+    /* Actions */
+    .actions-bar {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .toggle-avatar-btn {
+      padding: 0.75rem 1.25rem;
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #cbd5e1;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.2s;
+    }
+    .toggle-avatar-btn:hover {
+      background: #334155;
+      color: #ffffff;
+    }
+
+    .download-btn {
+      padding: 0.85rem 2rem;
+      background: linear-gradient(135deg, #0284c7, #38bdf8);
+      border: none;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(2, 132, 199, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px rgba(2, 132, 199, 0.6);
+    }
+
+    .tips-section {
+      width: 100%;
+      max-width: 1200px;
+      background: rgba(14, 165, 233, 0.05);
+      border: 1px dashed rgba(56, 189, 248, 0.3);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    .tips-section strong {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="app-header">
+    <span class="badge">Générateur Officiel LinkedIn 1584 × 396 px</span>
+    <h1>Bannière LinkedIn Personnalisée</h1>
+    <p class="subtitle">
+      Conçue sur-mesure d'après votre exemple : esthétique tech moderne, sphère géodésique en fil de fer, espace réservé pour votre photo de profil et export PNG haute définition en 1 clic.
+    </p>
+  </header>
+
+  <main class="preview-card">
+    <div class="canvas-wrapper">
+      <canvas id="bannerCanvas" width="1584" height="396"></canvas>
+      
+      <!-- Simulation photo profil LinkedIn -->
+      <div class="avatar-preview-guide" id="avatarPreview">
+        <img src="assets/nayrouz_gasmi.jpg?v=2" alt="Photo Profil Nayrouz Gasmi">
+      </div>
+      <span class="avatar-preview-label" id="avatarLabel">Emplacement photo LinkedIn</span>
+    </div>
+  </main>
+
+  <section class="controls-grid">
+    <!-- Informations Personnelles -->
+    <div class="control-box">
+      <h3>👤 Informations Principales</h3>
+      <div class="form-group">
+        <label for="inputName">Nom & Prénom</label>
+        <input type="text" id="inputName" value="Nayrouz Gasmi">
+      </div>
+      <div class="form-group">
+        <label for="inputRole">Intitulé du Poste (Subtitle)</label>
+        <input type="text" id="inputRole" value="SOFTWARE ENGINEER">
+      </div>
+      <div class="form-group">
+        <label for="inputSpeciality">Spécialisation / Stack Clé</label>
+        <input type="text" id="inputSpeciality" value="Full Stack Java 17 • Spring Boot • Angular • Microservices">
+      </div>
+    </div>
+
+    <!-- Coordonnées & Liens -->
+    <div class="control-box">
+      <h3>📞 Coordonnées Visibles</h3>
+      <div class="form-group">
+        <label for="inputPhone">Téléphone & WhatsApp</label>
+        <input type="text" id="inputPhone" value="+216 29 845 823">
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Email Professionnel</label>
+        <input type="text" id="inputEmail" value="nayrouzgasmi@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="inputPortfolio">Portfolio Web</label>
+        <input type="text" id="inputPortfolio" value="nayrouz-d.github.io/portfolio">
+      </div>
+    </div>
+
+    <!-- Choix des Styles & Thèmes -->
+    <div class="control-box">
+      <h3>🎨 Thème & Ambiance</h3>
+      <div class="style-presets">
+        <button class="preset-btn active" data-style="slate">
+          <span>Bleu Ardoise Tech (Style Référence)</span>
+          <span class="preset-dot" style="background: #3e5066;"></span>
+        </button>
+        <button class="preset-btn" data-style="cyber_ai">
+          <span>Cyber IA Futuriste (Fond 3D Glow)</span>
+          <span class="preset-dot" style="background: #0284c7;"></span>
+        </button>
+        <button class="preset-btn" data-style="navy">
+          <span>Deep Navy & Cyan Lumineux</span>
+          <span class="preset-dot" style="background: #0f172a;"></span>
+        </button>
+        <button class="preset-btn" data-style="dark">
+          <span>Dark Titanium Minimaliste</span>
+          <span class="preset-dot" style="background: #18181b;"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="actions-bar">
+    <button class="toggle-avatar-btn" id="toggleAvatarBtn">
+      👁️ <span id="toggleAvatarText">Masquer la simulation photo profil</span>
+    </button>
+
+    <button class="download-btn" id="downloadBtn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      Télécharger l'Image PNG (1584 × 396 px)
+    </button>
+  </div>
+
+  <section class="tips-section">
+    <strong>💡 Astuces pour votre couverture LinkedIn :</strong><br>
+    • <strong>Dimensions certifiées LinkedIn :</strong> L'image générée fait exactement <strong>1584 x 396 pixels</strong>, garantissant zéro flou ni recadrage.<br>
+    • <strong>Zone de sécurité avatar :</strong> La zone inférieure gauche est spécialement protégée pour que votre photo de profil ronde ne masque aucun texte ni numéro.<br>
+    • <strong>Comment l'insérer sur LinkedIn :</strong> Allez sur votre profil LinkedIn > Cliquez sur l'icône appareil photo 📷 en haut à droite de votre bannière > Sélectionnez l'image téléchargée > Enregistrez !
+  </section>
+
+  <script>
+    const canvas = document.getElementById('bannerCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const inputs = {
+      name: document.getElementById('inputName'),
+      role: document.getElementById('inputRole'),
+      speciality: document.getElementById('inputSpeciality'),
+      phone: document.getElementById('inputPhone'),
+      email: document.getElementById('inputEmail'),
+      portfolio: document.getElementById('inputPortfolio')
+    };
+
+    let currentStyle = 'slate';
+
+    const bgImage = new Image();
+    bgImage.src = 'assets/linkedin_banner_bg.jpg';
+    bgImage.onload = () => { if (currentStyle === 'cyber_ai') renderBanner(); };
+
+    const STYLES = {
+      slate: {
+        bgStart: '#2d3b4d',
+        bgMid: '#3c4e64',
+        bgEnd: '#222f3e',
+        meshColor: 'rgba(147, 197, 253, 0.28)',
+        meshNodes: '#93c5fd',
+        titleColor: '#ffffff',
+        roleColor: '#93c5fd',
+        specialityColor: '#e2e8f0',
+        specialityBg: 'rgba(255, 255, 255, 0.08)',
+        specialityBorder: 'rgba(255, 255, 255, 0.15)',
+        iconBg: '#38bdf8',
+        iconColor: '#0f172a',
+        infoColor: '#cbd5e1'
+      },
+      cyber_ai: {
+        useBgImage: true,
+        meshColor: 'rgba(56, 189, 248, 0.25)',
+        meshNodes: '#38bdf8',
+        titleColor: '#ffffff',
+        roleColor: '#38bdf8',
+        specialityColor: '#f8fafc',
+        specialityBg: 'rgba(15, 23, 42, 0.75)',
+        specialityBorder: 'rgba(56, 189, 248, 0.45)',
+        iconBg: '#38bdf8',
+        iconColor: '#0a0f1d',
+        infoColor: '#e2e8f0'
+      },
+      navy: {
+        bgStart: '#090d16',
+        bgMid: '#111c2e',
+        bgEnd: '#060a10',
+        meshColor: 'rgba(56, 189, 248, 0.32)',
+        meshNodes: '#38bdf8',
+        titleColor: '#ffffff',
+        roleColor: '#38bdf8',
+        specialityColor: '#f1f5f9',
+        specialityBg: 'rgba(14, 165, 233, 0.15)',
+        specialityBorder: 'rgba(56, 189, 248, 0.3)',
+        iconBg: '#38bdf8',
+        iconColor: '#0a0f1d',
+        infoColor: '#cbd5e1'
+      },
+      dark: {
+        bgStart: '#18181b',
+        bgMid: '#27272a',
+        bgEnd: '#09090b',
+        meshColor: 'rgba(161, 161, 170, 0.22)',
+        meshNodes: '#e4e4e7',
+        titleColor: '#ffffff',
+        roleColor: '#a1a1aa',
+        specialityColor: '#f4f4f5',
+        specialityBg: 'rgba(255, 255, 255, 0.06)',
+        specialityBorder: 'rgba(255, 255, 255, 0.12)',
+        iconBg: '#e4e4e7',
+        iconColor: '#09090b',
+        infoColor: '#a1a1aa'
+      }
+    };
+
+    function drawWireframeSphere(centerX, centerY, radius, color, nodeColor) {
+      ctx.save();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1.4;
+
+      const numPoints = 12;
+      const points = [];
+
+      for (let i = 0; i < numPoints; i++) {
+        const angle = (i / numPoints) * Math.PI * 2;
+        const x = centerX + Math.cos(angle) * radius;
+        const y = centerY + Math.sin(angle) * (radius * 0.9);
+        points.push({ x, y });
+      }
+
+      // Inner polygon
+      const innerPoints = [];
+      const innerRadius = radius * 0.55;
+      for (let i = 0; i < 6; i++) {
+        const angle = (i / 6) * Math.PI * 2 + Math.PI / 6;
+        const x = centerX + Math.cos(angle) * innerRadius;
+        const y = centerY + Math.sin(angle) * innerRadius;
+        innerPoints.push({ x, y });
+      }
+
+      // Dessiner polygones extérieurs
+      ctx.beginPath();
+      points.forEach((p, idx) => {
+        if (idx === 0) ctx.moveTo(p.x, p.y);
+        else ctx.lineTo(p.x, p.y);
+      });
+      ctx.closePath();
+      ctx.stroke();
+
+      // Dessiner polygone intérieur
+      ctx.beginPath();
+      innerPoints.forEach((p, idx) => {
+        if (idx === 0) ctx.moveTo(p.x, p.y);
+        else ctx.lineTo(p.x, p.y);
+      });
+      ctx.closePath();
+      ctx.stroke();
+
+      // Relier points
+      for (let i = 0; i < innerPoints.length; i++) {
+        const p1 = innerPoints[i];
+        const p2 = points[(i * 2) % points.length];
+        const p3 = points[(i * 2 + 1) % points.length];
+        const p4 = points[(i * 2 + 2) % points.length];
+
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p3.x, p3.y);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p4.x, p4.y);
+        ctx.stroke();
+
+        // Cross diagonals
+        const opposite = innerPoints[(i + 3) % innerPoints.length];
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(opposite.x, opposite.y);
+        ctx.stroke();
+      }
+
+      // Dessiner nœuds
+      ctx.fillStyle = nodeColor;
+      points.concat(innerPoints).forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      ctx.restore();
+    }
+
+    function drawTechHandSilhouette(x, y, scale) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.scale(scale, scale);
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+      ctx.lineWidth = 1.5;
+
+      // Dessiner réseau de nœuds robotique
+      const nodes = [
+        {x: 0, y: 50}, {x: 40, y: 30}, {x: 90, y: 20}, {x: 140, y: 15}, {x: 190, y: 10},
+        {x: 50, y: 60}, {x: 100, y: 50}, {x: 150, y: 45}, {x: 195, y: 40},
+        {x: 45, y: 90}, {x: 95, y: 80}, {x: 145, y: 75}, {x: 190, y: 70},
+        {x: 30, y: 120}, {x: 80, y: 110}, {x: 130, y: 105},
+        {x: -40, y: 80}, {x: -80, y: 90}, {x: -120, y: 100}
+      ];
+
+      for (let i = 0; i < nodes.length - 1; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 65) {
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      ctx.fillStyle = 'rgba(56, 189, 248, 0.25)';
+      nodes.forEach(n => {
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      ctx.restore();
+    }
+
+    function renderBanner() {
+      const cfg = STYLES[currentStyle];
+      const W = 1584;
+      const H = 396;
+
+      if (cfg.useBgImage && bgImage.complete && bgImage.naturalWidth > 0) {
+        // Dessiner le fond image généré par IA
+        ctx.drawImage(bgImage, 0, 0, W, H);
+        ctx.fillStyle = 'rgba(10, 15, 26, 0.45)';
+        ctx.fillRect(0, 0, W, H);
+      } else {
+        // 1. Fond Dégradé
+        const bgGrad = ctx.createLinearGradient(0, 0, W, H);
+        bgGrad.addColorStop(0, cfg.bgStart);
+        bgGrad.addColorStop(0.45, cfg.bgMid);
+        bgGrad.addColorStop(1, cfg.bgEnd);
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+
+        // 2. Grille subtile & Lumière ambiante
+        ctx.save();
+        const radialGlow = ctx.createRadialGradient(W / 2 + 100, H / 2, 50, W / 2 + 100, H / 2, 600);
+        radialGlow.addColorStop(0, 'rgba(56, 189, 248, 0.12)');
+        radialGlow.addColorStop(1, 'transparent');
+        ctx.fillStyle = radialGlow;
+        ctx.fillRect(0, 0, W, H);
+
+        // Lignes de grille discrètes
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.025)';
+        ctx.lineWidth = 1;
+        for (let x = 0; x < W; x += 44) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, H);
+          ctx.stroke();
+        }
+        for (let y = 0; y < H; y += 44) {
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(W, y);
+          ctx.stroke();
+        }
+        ctx.restore();
+
+        // 3. Sphère géodésique gauche (comme dans l'exemple de l'utilisatrice)
+        drawWireframeSphere(180, 180, 150, cfg.meshColor, cfg.meshNodes);
+        drawWireframeSphere(1440, 220, 160, cfg.meshColor, cfg.meshNodes);
+
+        // 4. Filigrane technologique à droite
+        drawTechHandSilhouette(1150, 120, 1.3);
+      }
+
+      // Centre décalé vers la droite pour équilibrer l'avatar en bas à gauche
+      const contentCenterX = 820;
+
+      // 5. Nom & Prénom
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.45)';
+      ctx.shadowBlur = 18;
+      ctx.shadowOffsetY = 4;
+      ctx.fillStyle = cfg.titleColor;
+      ctx.font = '800 64px "Plus Jakarta Sans", -apple-system, sans-serif';
+      ctx.fillText(inputs.name.value, contentCenterX, 115);
+      ctx.restore();
+
+      // 6. Rôle / Subtitle (majuscules aérées)
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = cfg.roleColor;
+      ctx.font = '700 22px "Space Grotesk", sans-serif';
+      
+      // Espacement de lettres
+      const roleText = inputs.role.value.toUpperCase();
+      const spacedRole = roleText.split('').join('  ');
+      ctx.fillText(spacedRole, contentCenterX, 175);
+      ctx.restore();
+
+      // 7. Pill Spécialité / Stack technique
+      if (inputs.speciality.value.trim()) {
+        ctx.save();
+        ctx.font = '600 15px "Plus Jakarta Sans", sans-serif';
+        const specText = inputs.speciality.value;
+        const textWidth = ctx.measureText(specText).width;
+        const pillW = textWidth + 36;
+        const pillH = 34;
+        const pillX = contentCenterX - pillW / 2;
+        const pillY = 212;
+
+        ctx.fillStyle = cfg.specialityBg;
+        ctx.strokeStyle = cfg.specialityBorder;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.roundRect(pillX, pillY, pillW, pillH, 17);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = cfg.specialityColor;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(specText, contentCenterX, pillY + pillH / 2);
+        ctx.restore();
+      }
+
+      // 8. Barre d'informations & Contacts (Téléphone, Email, Portfolio)
+      const contactY = 295;
+      const contacts = [
+        { icon: '📞', text: inputs.phone.value },
+        { icon: '✉️', text: inputs.email.value },
+        { icon: '🌐', text: inputs.portfolio.value }
+      ];
+
+      // Calculer largeur totale pour centrer les 3 éléments
+      ctx.save();
+      ctx.font = '600 16px "Plus Jakarta Sans", sans-serif';
+      const itemWidths = contacts.map(c => 36 + ctx.measureText(c.text).width);
+      const gap = 36;
+      const totalBarW = itemWidths.reduce((a, b) => a + b, 0) + gap * (contacts.length - 1);
+      let startX = contentCenterX - totalBarW / 2;
+
+      contacts.forEach((c, idx) => {
+        // Cercle icône
+        const circleRadius = 14;
+        const circleCenterX = startX + circleRadius;
+        const circleCenterY = contactY;
+
+        ctx.fillStyle = cfg.iconBg;
+        ctx.beginPath();
+        ctx.arc(circleCenterX, circleCenterY, circleRadius, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = cfg.iconColor;
+        ctx.font = '12px "Segoe UI Emoji", sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(c.icon, circleCenterX, circleCenterY);
+
+        // Texte contact
+        ctx.fillStyle = cfg.infoColor;
+        ctx.font = '500 15px "Plus Jakarta Sans", -apple-system, sans-serif';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(c.text, circleCenterX + circleRadius + 10, contactY);
+
+        startX += itemWidths[idx] + gap;
+      });
+      ctx.restore();
+    }
+
+    // Gestionnaires d'événements
+    Object.values(inputs).forEach(input => {
+      input.addEventListener('input', renderBanner);
+    });
+
+    document.querySelectorAll('.preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentStyle = btn.getAttribute('data-style');
+        renderBanner();
+      });
+    });
+
+    // Toggle simulation avatar
+    const avatarPreview = document.getElementById('avatarPreview');
+    const avatarLabel = document.getElementById('avatarLabel');
+    const toggleAvatarBtn = document.getElementById('toggleAvatarBtn');
+    const toggleAvatarText = document.getElementById('toggleAvatarText');
+    let avatarVisible = true;
+
+    toggleAvatarBtn.addEventListener('click', () => {
+      avatarVisible = !avatarVisible;
+      avatarPreview.style.opacity = avatarVisible ? '1' : '0';
+      avatarLabel.style.opacity = avatarVisible ? '1' : '0';
+      toggleAvatarText.textContent = avatarVisible 
+        ? 'Masquer la simulation photo profil' 
+        : 'Afficher la simulation photo profil';
+    });
+
+    // Téléchargement PNG direct
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+      renderBanner();
+      const link = document.createElement('a');
+      link.download = 'Nayrouz_Gasmi_LinkedIn_Banner.png';
+      link.href = canvas.toDataURL('image/png', 1.0);
+      link.click();
+    });
+
+    // Rendu initial après chargement des polices
+    document.fonts.ready.then(() => {
+      renderBanner();
+    });
+    renderBanner();
+  </script>
+</body>
+</html>
